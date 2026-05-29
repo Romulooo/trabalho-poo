@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://be6mslwqevbf6"
-path="res://.godot/imported/GreenDino.png-5350e964b30fc7c1dbaaad63e65ac0b8.ctex"
+uid="uid://c3onxlgmiyhjh"
+path="res://.godot/imported/RedDino.png-e29cb8c25928a343605e1e40c3c0b651.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/GreenDino.png"
-dest_files=["res://.godot/imported/GreenDino.png-5350e964b30fc7c1dbaaad63e65ac0b8.ctex"]
+source_file="res://Sprites/Players/RedDino.png"
+dest_files=["res://.godot/imported/RedDino.png-e29cb8c25928a343605e1e40c3c0b651.ctex"]
 
 [params]
 

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://dp41660bgeu5j"]
 
-[ext_resource type="Script" uid="uid://b68qi5bbu7pa7" path="res://Player/PasicMovement.gd" id="1_4ntmi"]
-[ext_resource type="Texture2D" uid="uid://be6mslwqevbf6" path="res://Sprites/GreenDino.png" id="2_4ntmi"]
+[ext_resource type="Script" uid="uid://b68qi5bbu7pa7" path="res://Players/BasicMovementP1.gd" id="1_4ntmi"]
+[ext_resource type="Texture2D" uid="uid://be6mslwqevbf6" path="res://Sprites/Players/GreenDino.png" id="2_4ntmi"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4ntmi"]
 size = Vector2(78, 102)
@@ -171,9 +171,6 @@ animations = [{
 
 [node name="Player" type="CharacterBody2D" unique_id=1316077864]
 script = ExtResource("1_4ntmi")
-
-[node name="Camera2D" type="Camera2D" parent="." unique_id=2140933782]
-zoom = Vector2(0.5, 0.5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1206548331]
 position = Vector2(-3, 4)
