@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var forca_impulso: float = -860.0
+@export var forca_impulso: float = -1000.0
 
 func _on_body_entered(body: Node2D) -> void:
 	if "velocity" in body:

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cq2xi4bu6sc8b"]
 
 [ext_resource type="Texture2D" uid="uid://cigih7uq2lqns" path="res://Sprites/Trampoline/Idle.png" id="1_mje6d"]
-[ext_resource type="Script" uid="uid://p1s8e477lm75" path="res://Objects/trampoline.gd" id="1_xfyy4"]
+[ext_resource type="Script" uid="uid://p1s8e477lm75" path="res://Objects/Trampoline/trampoline.gd" id="1_xfyy4"]
 [ext_resource type="Texture2D" uid="uid://bggiosajbhekb" path="res://Sprites/Trampoline/Jump (28x28).png" id="2_xfyy4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cmuc3"]
@@ -80,6 +80,8 @@ animations = [{
 size = Vector2(138, 31)
 
 [node name="Trampoline" type="Area2D" unique_id=288246974]
+collision_layer = 2
+collision_mask = 7
 script = ExtResource("1_xfyy4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1497177319]

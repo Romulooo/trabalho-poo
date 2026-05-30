@@ -1,0 +1,115 @@
+[gd_scene format=3 uid="uid://b1yaopeba6nqc"]
+
+[ext_resource type="Script" uid="uid://ubv071yabrlv" path="res://Enemies/Bee/bee.gd" id="1_32k1d"]
+[ext_resource type="Texture2D" uid="uid://du5xpptc7udoe" path="res://Sprites/Enemies/Bee.png" id="1_qs5k8"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tvgoh"]
+atlas = ExtResource("1_qs5k8")
+region = Rect2(0, 72, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dviih"]
+atlas = ExtResource("1_qs5k8")
+region = Rect2(24, 72, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cru8v"]
+atlas = ExtResource("1_qs5k8")
+region = Rect2(48, 72, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cm2cf"]
+atlas = ExtResource("1_qs5k8")
+region = Rect2(72, 72, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_32k1d"]
+atlas = ExtResource("1_qs5k8")
+region = Rect2(0, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n6p6b"]
+atlas = ExtResource("1_qs5k8")
+region = Rect2(24, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ko82m"]
+atlas = ExtResource("1_qs5k8")
+region = Rect2(48, 0, 24, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3jvxn"]
+atlas = ExtResource("1_qs5k8")
+region = Rect2(72, 0, 24, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_301ek"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tvgoh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dviih")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cru8v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cm2cf")
+}],
+"loop": true,
+"name": &"follow",
+"speed": 15.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_32k1d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n6p6b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ko82m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3jvxn")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 15.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_228oj"]
+size = Vector2(60, 60)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_x3usw"]
+radius = 626.1773
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tvgoh"]
+radius = 46.010868
+
+[node name="Bee" type="CharacterBody2D" unique_id=1064858923]
+collision_layer = 8
+collision_mask = 2
+script = ExtResource("1_32k1d")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1208464123]
+z_index = 4
+scale = Vector2(6, 6)
+sprite_frames = SubResource("SpriteFrames_301ek")
+animation = &"follow"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=387650130]
+shape = SubResource("RectangleShape2D_228oj")
+
+[node name="DetectionArea" type="Area2D" parent="." unique_id=1736126476]
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea" unique_id=976065144]
+shape = SubResource("CircleShape2D_x3usw")
+
+[node name="StingArea2D" type="Area2D" parent="." unique_id=1939875906]
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StingArea2D" unique_id=1172262018]
+shape = SubResource("CircleShape2D_tvgoh")
+
+[connection signal="body_entered" from="DetectionArea" to="." method="_on_detection_area_body_entered"]
+[connection signal="body_exited" from="DetectionArea" to="." method="_on_detection_area_body_exited"]
+[connection signal="body_entered" from="StingArea2D" to="." method="_on_sting_area_2d_body_entered"]
