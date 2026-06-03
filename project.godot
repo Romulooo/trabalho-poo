@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 GameManager="*uid://0hvtk3urkue6"
 Transition="*uid://i05yw57h8agf"
+Hud="*uid://si4vxtv31qc5"
 
 [input]
 

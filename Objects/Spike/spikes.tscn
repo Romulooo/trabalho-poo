@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dn34a2n5ad44a"]
 
-[ext_resource type="Script" uid="uid://nblmw8r40ank" path="res://spikes.gd" id="1_ielo7"]
+[ext_resource type="Script" uid="uid://nblmw8r40ank" path="res://Objects/Spike/spikes.gd" id="1_ielo7"]
 [ext_resource type="Texture2D" uid="uid://cfbfp2uir7nsw" path="res://Sprites/Spike/Idle.png" id="2_y5apu"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_khw0p"]

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cf8lfvx4uvvuh"]
+
+[ext_resource type="Script" uid="uid://cgpn4ea4l6tpw" path="res://Scripts/CameraFollow.gd" id="1_8i3m3"]
+[ext_resource type="PackedScene" uid="uid://dp41660bgeu5j" path="res://Players/player1.tscn" id="2_rmy57"]
+[ext_resource type="PackedScene" uid="uid://dcevq0fpqjy42" path="res://Players/player2.tscn" id="3_qulpo"]
+
+[node name="Level2" type="Node2D" unique_id=1181925147]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1087494450 node_paths=PackedStringArray("player1")]
+z_index = 2
+zoom = Vector2(0.35, 0.35)
+position_smoothing_enabled = true
+script = ExtResource("1_8i3m3")
+player1 = NodePath("")
+
+[node name="Player" parent="." unique_id=1316077864 instance=ExtResource("2_rmy57")]
+z_index = 1
+position = Vector2(520, 420)
+
+[node name="Player2" parent="." unique_id=1626768893 instance=ExtResource("3_qulpo")]
+position = Vector2(325, 425)

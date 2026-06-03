@@ -1,0 +1,159 @@
+[gd_scene format=3 uid="uid://si4vxtv31qc5"]
+
+[ext_resource type="Script" uid="uid://dnkyp3q8yl6f0" path="res://UI/hud.gd" id="1_ne75i"]
+[ext_resource type="Texture2D" uid="uid://t1cio70lcob4" path="res://Sprites/Fruits/Pineapple.png" id="2_bytes"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2o5uh"]
+atlas = ExtResource("2_bytes")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b1lf8"]
+atlas = ExtResource("2_bytes")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rnl6m"]
+atlas = ExtResource("2_bytes")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1ui3w"]
+atlas = ExtResource("2_bytes")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0j753"]
+atlas = ExtResource("2_bytes")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i0a73"]
+atlas = ExtResource("2_bytes")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pf7ph"]
+atlas = ExtResource("2_bytes")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vs5gg"]
+atlas = ExtResource("2_bytes")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_23s3h"]
+atlas = ExtResource("2_bytes")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_phrgc"]
+atlas = ExtResource("2_bytes")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8nmcf"]
+atlas = ExtResource("2_bytes")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sab3h"]
+atlas = ExtResource("2_bytes")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vdnig"]
+atlas = ExtResource("2_bytes")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pueji"]
+atlas = ExtResource("2_bytes")
+region = Rect2(416, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4evux"]
+atlas = ExtResource("2_bytes")
+region = Rect2(448, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_508rn"]
+atlas = ExtResource("2_bytes")
+region = Rect2(480, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4lx80"]
+atlas = ExtResource("2_bytes")
+region = Rect2(512, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hjmqc"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2o5uh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b1lf8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rnl6m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1ui3w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0j753")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i0a73")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pf7ph")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vs5gg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_23s3h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_phrgc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8nmcf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sab3h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vdnig")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pueji")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4evux")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_508rn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4lx80")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 20.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_ne75i"]
+font_size = 32
+shadow_size = 8
+shadow_color = Color(0, 0, 0, 0.42352942)
+
+[node name="HUD" type="CanvasLayer" unique_id=2007061404]
+script = ExtResource("1_ne75i")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1712056447]
+position = Vector2(61.999996, 61)
+scale = Vector2(2.1953125, 2.1953125)
+sprite_frames = SubResource("SpriteFrames_hjmqc")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.12993284
+
+[node name="Fruits" type="Label" parent="." unique_id=793311786]
+offset_left = 80.0
+offset_top = 40.0
+offset_right = 160.0
+offset_bottom = 85.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "x0"
+label_settings = SubResource("LabelSettings_ne75i")

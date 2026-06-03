@@ -13,7 +13,7 @@ func _physics_process(delta: float) -> void:
 	
 	if is_on_wall():
 		direction *= -1
-
+	
 	if not is_attacking and not is_dead:
 		if color == 1:
 			$AnimatedSprite2D.play("idleRed")
@@ -53,7 +53,8 @@ func _physics_process(delta: float) -> void:
 func _on_head_body_entered(body: Node2D) -> void:
 	if body.name == "Player" or body.name == "Player2":
 		if body.velocity.y > 0:
-			body.velocity.y = -400
+			if not is_dead:
+				body.velocity.y = -400
 			is_dead = true
 			velocity.x = 0
 			await get_tree().create_timer(0.6, true, false, true).timeout 

@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://cjcjffeovs6es"]
+
+[ext_resource type="Script" uid="uid://drvipn6r5nr3u" path="res://Objects/FallingPlatform/falling_platform.gd" id="1_c6gya"]
+[ext_resource type="Texture2D" uid="uid://c2nnnm03kvbgw" path="res://Sprites/FallingPlatform/Off.png" id="2_xubj0"]
+[ext_resource type="Texture2D" uid="uid://cjs6i01byjwx6" path="res://Sprites/FallingPlatform/On (32x10).png" id="3_4t64b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_edlj6"]
+size = Vector2(192, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a7xhb"]
+atlas = ExtResource("3_4t64b")
+region = Rect2(0, 0, 32, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4s71"]
+atlas = ExtResource("3_4t64b")
+region = Rect2(32, 0, 32, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bc2ja"]
+atlas = ExtResource("3_4t64b")
+region = Rect2(64, 0, 32, 10)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g5ic0"]
+atlas = ExtResource("3_4t64b")
+region = Rect2(96, 0, 32, 10)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_x7y3j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_xubj0")
+}],
+"loop": true,
+"name": &"off",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a7xhb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i4s71")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bc2ja")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g5ic0")
+}],
+"loop": true,
+"name": &"on",
+"speed": 12.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5gest"]
+size = Vector2(192, 30)
+
+[node name="falling_platform" type="RigidBody2D" unique_id=1562064965]
+gravity_scale = 0.0
+script = ExtResource("1_c6gya")
+
+[node name="DetectionArea2D" type="Area2D" parent="." unique_id=1083955920]
+collision_layer = 2
+collision_mask = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea2D" unique_id=604249707]
+position = Vector2(0, -56)
+shape = SubResource("RectangleShape2D_edlj6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1683264537]
+scale = Vector2(6, 6)
+sprite_frames = SubResource("SpriteFrames_x7y3j")
+animation = &"on"
+autoplay = "on"
+frame_progress = 0.15875642
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=904927248]
+position = Vector2(0, -15)
+shape = SubResource("RectangleShape2D_5gest")
+
+[connection signal="body_entered" from="DetectionArea2D" to="." method="_on_detection_area_2d_body_entered"]
