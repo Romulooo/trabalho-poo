@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://cq2xi4bu6sc8b" path="res://Objects/Trampoline/trampoline.tscn" id="6_kdubu"]
 [ext_resource type="Texture2D" uid="uid://cdsluilthgkdk" path="res://Sprites/Terrain/Decoration/arrow_plate_right.png" id="6_nr8wp"]
 [ext_resource type="Texture2D" uid="uid://cqgl1ydcqimmx" path="res://Sprites/Terrain/Decoration/wooden_plate.png" id="7_d2bti"]
-[ext_resource type="PackedScene" uid="uid://cj0avur8pv6bd" path="res://Objects/Fruits/Pineapple/pineapple.tscn" id="7_d21ai"]
+[ext_resource type="PackedScene" uid="uid://cj0avur8pv6bd" path="res://Objects/Fruits/Fruit/fruit.tscn" id="7_d21ai"]
 [ext_resource type="PackedScene" uid="uid://c6kcet8ykna1k" path="res://Objects/death_zone.tscn" id="7_rj586"]
 [ext_resource type="PackedScene" uid="uid://15hj6yflyxwy" path="res://Enemies/Mushroom/mushroom.tscn" id="8_rj586"]
 [ext_resource type="Texture2D" uid="uid://cq17c7dc4ovfd" path="res://Sprites/Terrain/Decoration/bigflowers_props.png" id="8_ta5nu"]

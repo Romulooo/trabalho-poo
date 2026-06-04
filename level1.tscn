@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://kmxcbbfidjx6"]
 
-[ext_resource type="PackedScene" uid="uid://cj0avur8pv6bd" path="res://Objects/Fruits/Pineapple/pineapple.tscn" id="1_1idop"]
+[ext_resource type="PackedScene" uid="uid://cj0avur8pv6bd" path="res://Objects/Fruits/Fruit/fruit.tscn" id="1_1idop"]
 [ext_resource type="PackedScene" uid="uid://cjcjffeovs6es" path="res://Objects/FallingPlatform/falling_platform.tscn" id="1_ycv2e"]
 [ext_resource type="PackedScene" uid="uid://15hj6yflyxwy" path="res://Enemies/Mushroom/mushroom.tscn" id="2_beq0j"]
 [ext_resource type="PackedScene" uid="uid://b1yaopeba6nqc" path="res://Enemies/Bee/bee.tscn" id="3_nauge"]
@@ -351,47 +351,47 @@ sources/1 = SubResource("TileSetAtlasSource_nxqqj")
 sources/2 = SubResource("TileSetAtlasSource_7nyxr")
 sources/3 = SubResource("TileSetAtlasSource_43lh3")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5le63"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6e4cv"]
 texture = ExtResource("12_5le63")
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pieet"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uuy0h"]
 texture = ExtResource("13_pieet")
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qiqrj"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5le63"]
 texture = ExtResource("14_qiqrj")
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xm42n"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pieet"]
 texture = ExtResource("15_nauge")
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6wmxb"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qiqrj"]
 texture = ExtResource("16_ycv2e")
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8652m"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xm42n"]
 texture = ExtResource("15_xm42n")
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jy3fw"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6wmxb"]
 texture = ExtResource("16_6wmxb")
 0:0/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_t8chk"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8652m"]
 texture = ExtResource("17_8652m")
 0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_d2bti"]
-sources/0 = SubResource("TileSetAtlasSource_5le63")
-sources/1 = SubResource("TileSetAtlasSource_pieet")
-sources/2 = SubResource("TileSetAtlasSource_qiqrj")
-sources/5 = SubResource("TileSetAtlasSource_8652m")
-sources/6 = SubResource("TileSetAtlasSource_jy3fw")
-sources/7 = SubResource("TileSetAtlasSource_t8chk")
-sources/3 = SubResource("TileSetAtlasSource_xm42n")
-sources/4 = SubResource("TileSetAtlasSource_6wmxb")
+sources/0 = SubResource("TileSetAtlasSource_6e4cv")
+sources/1 = SubResource("TileSetAtlasSource_uuy0h")
+sources/2 = SubResource("TileSetAtlasSource_5le63")
+sources/5 = SubResource("TileSetAtlasSource_xm42n")
+sources/6 = SubResource("TileSetAtlasSource_6wmxb")
+sources/7 = SubResource("TileSetAtlasSource_8652m")
+sources/3 = SubResource("TileSetAtlasSource_pieet")
+sources/4 = SubResource("TileSetAtlasSource_qiqrj")
 
 [node name="Fase1" type="Node2D" unique_id=1116765468]
 
@@ -405,12 +405,10 @@ player2 = NodePath("../Player2")
 
 [node name="Player" parent="." unique_id=1316077864 instance=ExtResource("8_52iny")]
 z_index = 1
-position = Vector2(520, 420)
-collision_mask = 7
+position = Vector2(560, 420)
 
 [node name="Player2" parent="." unique_id=555871169 instance=ExtResource("9_nxqqj")]
 position = Vector2(325, 425)
-collision_mask = 7
 
 [node name="FallingPlatforms" type="Node" parent="." unique_id=1710706292]
 
@@ -422,43 +420,43 @@ position = Vector2(12660, 500)
 
 [node name="Fruits" type="Node" parent="." unique_id=269570780]
 
-[node name="Pineapple" parent="Fruits" unique_id=665623808 instance=ExtResource("1_1idop")]
-position = Vector2(1300, 280)
+[node name="Fruit" parent="Fruits" unique_id=665623808 instance=ExtResource("1_1idop")]
+position = Vector2(1282, 279)
 
-[node name="Pineapple2" parent="Fruits" unique_id=1609966257 instance=ExtResource("1_1idop")]
-position = Vector2(1820.0001, 380.00003)
+[node name="Fruit2" parent="Fruits" unique_id=1609966257 instance=ExtResource("1_1idop")]
+position = Vector2(1824, 380.00003)
 
-[node name="Pineapple3" parent="Fruits" unique_id=480667673 instance=ExtResource("1_1idop")]
+[node name="Fruit3" parent="Fruits" unique_id=480667673 instance=ExtResource("1_1idop")]
 position = Vector2(2980, 40)
 
-[node name="Pineapple4" parent="Fruits" unique_id=1818547210 instance=ExtResource("1_1idop")]
+[node name="Fruit4" parent="Fruits" unique_id=1818547210 instance=ExtResource("1_1idop")]
 position = Vector2(6239, 359)
 
-[node name="Pineapple5" parent="Fruits" unique_id=508442977 instance=ExtResource("1_1idop")]
+[node name="Fruit5" parent="Fruits" unique_id=508442977 instance=ExtResource("1_1idop")]
 position = Vector2(5616, -398.99997)
 
-[node name="Pineapple6" parent="Fruits" unique_id=587510631 instance=ExtResource("1_1idop")]
+[node name="Fruit6" parent="Fruits" unique_id=587510631 instance=ExtResource("1_1idop")]
 position = Vector2(7253, -216.00003)
 
-[node name="Pineapple7" parent="Fruits" unique_id=1006153215 instance=ExtResource("1_1idop")]
+[node name="Fruit7" parent="Fruits" unique_id=1006153215 instance=ExtResource("1_1idop")]
 position = Vector2(7555, -1060)
 
-[node name="Pineapple8" parent="Fruits" unique_id=907458444 instance=ExtResource("1_1idop")]
+[node name="Fruit8" parent="Fruits" unique_id=907458444 instance=ExtResource("1_1idop")]
 position = Vector2(7725.0005, -1060)
 
-[node name="Pineapple9" parent="Fruits" unique_id=2020308563 instance=ExtResource("1_1idop")]
+[node name="Fruit9" parent="Fruits" unique_id=2020308563 instance=ExtResource("1_1idop")]
 position = Vector2(3920.0005, 475)
 
-[node name="Pineapple10" parent="Fruits" unique_id=953481591 instance=ExtResource("1_1idop")]
+[node name="Fruit10" parent="Fruits" unique_id=953481591 instance=ExtResource("1_1idop")]
 position = Vector2(8160, 825)
 
-[node name="Pineapple11" parent="Fruits" unique_id=600298250 instance=ExtResource("1_1idop")]
+[node name="Fruit11" parent="Fruits" unique_id=600298250 instance=ExtResource("1_1idop")]
 position = Vector2(10320, -120)
 
-[node name="Pineapple12" parent="Fruits" unique_id=1985246130 instance=ExtResource("1_1idop")]
+[node name="Fruit12" parent="Fruits" unique_id=1985246130 instance=ExtResource("1_1idop")]
 position = Vector2(9840, 740)
 
-[node name="Pineapple13" parent="Fruits" unique_id=2026777131 instance=ExtResource("1_1idop")]
+[node name="Fruit13" parent="Fruits" unique_id=2026777131 instance=ExtResource("1_1idop")]
 position = Vector2(10320, 644)
 
 [node name="Enemies" type="Node" parent="." unique_id=245534863]
@@ -492,15 +490,15 @@ position = Vector2(7800, 20)
 [node name="Trampoline4" parent="Trampolines" unique_id=86975361 instance=ExtResource("4_ycv2e")]
 position = Vector2(6305, -370)
 
-[node name="Node" type="Node" parent="." unique_id=1633092695]
+[node name="Spikes" type="Node" parent="." unique_id=1633092695]
 
-[node name="Spikes" parent="Node" unique_id=1058484094 instance=ExtResource("5_c5gc3")]
+[node name="Spikes" parent="Spikes" unique_id=1058484094 instance=ExtResource("5_c5gc3")]
 position = Vector2(2985, 530)
 
-[node name="Spikes2" parent="Node" unique_id=771428511 instance=ExtResource("5_c5gc3")]
+[node name="Spikes2" parent="Spikes" unique_id=771428511 instance=ExtResource("5_c5gc3")]
 position = Vector2(6865, 435)
 
-[node name="Spikes3" parent="Node" unique_id=1687047680 instance=ExtResource("5_c5gc3")]
+[node name="Spikes3" parent="Spikes" unique_id=1687047680 instance=ExtResource("5_c5gc3")]
 position = Vector2(9130, 915)
 
 [node name="DeathZones" type="Node" parent="." unique_id=2024471967]

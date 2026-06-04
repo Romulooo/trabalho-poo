@@ -5,10 +5,11 @@ extends Area2D
 func _on_body_entered(body: Node2D) -> void:
 	if "velocity" in body:
 		body.velocity.y = forca_impulso
+		if body.name == "Mushroom" or "Mushroom" in body.name:
+			body.is_bouncing = true
+
 		$AnimatedSprite2D.play("jump")
 	
-
-
 func _on_body_exited(body: Node2D) -> void:
 	await get_tree().create_timer(0.5).timeout
 	$AnimatedSprite2D.play("idle")

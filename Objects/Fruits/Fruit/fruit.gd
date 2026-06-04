@@ -2,6 +2,12 @@ extends Area2D
 
 @export var efeito: PackedScene
 
+func _ready() -> void:
+	if get_tree().current_scene.name == "Level1":
+		$AnimatedSprite2D.play("idlePineapple")
+	elif get_tree().current_scene.name == "Level2":
+		$AnimatedSprite2D.play("idleKiwi")
+
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "Player" or body.name == "Player2":
 		GameManager.collect_pineapple()

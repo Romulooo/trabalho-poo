@@ -364,18 +364,19 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v3oa7"]
-size = Vector2(13.333334, 2.333333)
+size = Vector2(13.333334, 6.166667)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2obgq"]
+size = Vector2(15.666667, 13.333333)
 
 [sub_resource type="GDScript" id="GDScript_wr0a8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wr0a8"]
 size = Vector2(13.833334, 4.333334)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_2obgq"]
-size = Vector2(15.666667, 12.833333)
-
 [node name="Mushroom" type="CharacterBody2D" unique_id=111424788]
 scale = Vector2(6, 6)
+collision_layer = 3
 collision_mask = 7
 script = ExtResource("2_2obgq")
 
@@ -385,8 +386,16 @@ animation = &"deathYellow"
 autoplay = "idleRed"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=866048103]
-position = Vector2(0.33333302, 10.833334)
+position = Vector2(0.33333302, 8.916667)
 shape = SubResource("RectangleShape2D_v3oa7")
+
+[node name="Body" type="Area2D" parent="." unique_id=736314738]
+collision_layer = 7
+collision_mask = 7
+
+[node name="BodyCollisionShape2D" type="CollisionShape2D" parent="Body" unique_id=2059469495]
+position = Vector2(0, 5.8333335)
+shape = SubResource("RectangleShape2D_2obgq")
 
 [node name="Head" type="Area2D" parent="." unique_id=1188453241]
 collision_layer = 7
@@ -397,13 +406,5 @@ script = SubResource("GDScript_wr0a8")
 position = Vector2(-0.083333254, -2.0000005)
 shape = SubResource("RectangleShape2D_wr0a8")
 
-[node name="Body" type="Area2D" parent="." unique_id=736314738]
-collision_layer = 7
-collision_mask = 7
-
-[node name="BodyCollisionShape2D" type="CollisionShape2D" parent="Body" unique_id=2059469495]
-position = Vector2(0, 5.5833335)
-shape = SubResource("RectangleShape2D_2obgq")
-
-[connection signal="body_entered" from="Head" to="." method="_on_head_body_entered"]
 [connection signal="body_entered" from="Body" to="." method="_on_body_body_entered"]
+[connection signal="body_entered" from="Head" to="." method="_on_head_body_entered"]

@@ -5,7 +5,8 @@ var is_dead = false
 const SPEED = 250.0
 
 func _on_detection_area_body_entered(body: Node2D) -> void:
-	target = body
+	if body.name == "Player" or body.name =="Player2":
+		target = body
 
 func _on_detection_area_body_exited(body: Node2D) -> void:
 	target = null

@@ -5,11 +5,15 @@ var speed = 140
 var is_attacking = false
 var is_dead = false
 
+var is_bouncing = false
+
 var color: int = randi_range(1, 3)
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
+	
+	
 	
 	if is_on_wall():
 		direction *= -1
@@ -22,10 +26,15 @@ func _physics_process(delta: float) -> void:
 		elif color == 3:
 			$AnimatedSprite2D.play("idleYellow")
 		
-		if direction:
-			velocity.x = direction * speed
+		if not is_bouncing:
+			if direction:
+				velocity.x = direction * speed
+			else:
+				velocity.x = move_toward(velocity.x, 0, speed)
 		else:
-			velocity.x = move_toward(velocity.x, 0, speed)
+			if direction:
+				velocity.x = direction * 300
+	
 	elif is_attacking:
 		if color == 1:
 			$AnimatedSprite2D.play("attackRed")
@@ -44,6 +53,9 @@ func _physics_process(delta: float) -> void:
 		velocity.x = 0
 		
 	move_and_slide()
+	
+	if is_on_floor() and is_bouncing and velocity.y >= 0:
+		is_bouncing = false
 	
 	if direction > 0:
 		$AnimatedSprite2D.flip_h = false
