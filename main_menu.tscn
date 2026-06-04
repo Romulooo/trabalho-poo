@@ -1,25 +1,19 @@
 [gd_scene format=3 uid="uid://dlufxoc6c4cf6"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rhts7"]
-bg_color = Color(0.27017456, 0.7064792, 0.2768037, 1)
-border_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-shadow_color = Color(0, 0, 0, 0.12156863)
-shadow_size = 3
-shadow_offset = Vector2(5, 5)
+[ext_resource type="Texture2D" uid="uid://c13uoadwemg2a" path="res://Sprites/UI/Button.png" id="1_fu7sn"]
+[ext_resource type="Script" uid="uid://ckte4cfh6ewre" path="res://UI/main_menu.gd" id="1_glbon"]
+[ext_resource type="FontFile" uid="uid://ffxdr40ylyvi" path="res://UI/PixelifySans-VariableFont_wght.ttf" id="1_jix8l"]
+[ext_resource type="Texture2D" uid="uid://cue3egcitarqf" path="res://Sprites/UI/ButtonClick.png" id="2_jix8l"]
+[ext_resource type="Texture2D" uid="uid://c1cywo8ewscgc" path="res://Sprites/UI/ButtonHoover.png" id="3_glbon"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_06t4h"]
-bg_color = Color(0.22035676, 0.56750673, 0.22674075, 1)
-corner_radius_top_left = 10
-corner_radius_top_right = 10
-corner_radius_bottom_right = 10
-corner_radius_bottom_left = 10
-shadow_color = Color(0, 0, 0, 0.12156863)
-shadow_size = 3
-shadow_offset = Vector2(5, 5)
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nlkkf"]
+texture = ExtResource("1_fu7sn")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qe12f"]
+texture = ExtResource("2_jix8l")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8qtwp"]
+texture = ExtResource("3_glbon")
 
 [node name="MainMenu" type="Control" unique_id=1850957777]
 layout_mode = 3
@@ -28,22 +22,45 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_glbon")
 
-[node name="Button" type="Button" parent="." unique_id=977633898]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1477882975]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -95.0
-offset_top = 104.0
-offset_right = 95.0
-offset_bottom = 154.0
+offset_left = -108.0
+offset_top = -108.0
+offset_right = 108.0
+offset_bottom = 108.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 20
-theme_override_styles/normal = SubResource("StyleBoxFlat_rhts7")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_06t4h")
-theme_override_styles/hover = SubResource("StyleBoxFlat_06t4h")
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="ButtonPlay" type="Button" parent="VBoxContainer" unique_id=977633898]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.78039217, 0.5372549, 0.3647059, 1)
+theme_override_fonts/font = ExtResource("1_jix8l")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_nlkkf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_qe12f")
+theme_override_styles/hover = SubResource("StyleBoxTexture_8qtwp")
 text = "Jogar"
+
+[node name="ButtonQuit" type="Button" parent="VBoxContainer" unique_id=187584543]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.78039217, 0.5372549, 0.3647059, 1)
+theme_override_fonts/font = ExtResource("1_jix8l")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxTexture_nlkkf")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_qe12f")
+theme_override_styles/hover = SubResource("StyleBoxTexture_8qtwp")
+text = "Sair"
+
+[connection signal="pressed" from="VBoxContainer/ButtonPlay" to="." method="_on_button_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/ButtonQuit" to="." method="_on_button_quit_pressed"]

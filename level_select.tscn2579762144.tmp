@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://chu44avco4jav"]
+
+[ext_resource type="Script" uid="uid://8a3gd316s825" path="res://UI/level_select.gd" id="1_il3u1"]
+[ext_resource type="Texture2D" uid="uid://b6i6j3tqexc5x" path="res://Sprites/UI/Arrow.png" id="2_vomi7"]
+
+[node name="LevelSelect" type="Control" unique_id=1375777757]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_il3u1")
+
+[node name="Back" type="Button" parent="." unique_id=1234422259]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 60.0
+offset_right = 104.0
+offset_bottom = 101.0
+rotation = 3.1415927
+icon = ExtResource("2_vomi7")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1999479566]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ButtonLevel1" type="Button" parent="GridContainer" unique_id=991070521]
+layout_mode = 2
+text = "Level 1"
+
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]

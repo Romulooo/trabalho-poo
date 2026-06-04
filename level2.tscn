@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cf8lfvx4uvvuh"]
 
 [ext_resource type="Script" uid="uid://cgpn4ea4l6tpw" path="res://Scripts/CameraFollow.gd" id="1_8i3m3"]
+[ext_resource type="Script" uid="uid://cly2hi4n4mnhg" path="res://level_2.gd" id="1_iakae"]
 [ext_resource type="PackedScene" uid="uid://dp41660bgeu5j" path="res://Players/player1.tscn" id="2_rmy57"]
 [ext_resource type="PackedScene" uid="uid://dcevq0fpqjy42" path="res://Players/player2.tscn" id="3_qulpo"]
 [ext_resource type="Texture2D" uid="uid://cweegkmvxkrmw" path="res://Sprites/Terrain/Terrain (16x16).png" id="4_8i3m3"]
@@ -394,6 +395,7 @@ sources/3 = SubResource("TileSetAtlasSource_fug78")
 sources/4 = SubResource("TileSetAtlasSource_lh3ue")
 
 [node name="Level2" type="Node2D" unique_id=1181925147]
+script = ExtResource("1_iakae")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1087494450 node_paths=PackedStringArray("player1")]
 z_index = 2
@@ -584,3 +586,7 @@ position = Vector2(5077, 380)
 [node name="death_zone" parent="DeathZones" unique_id=697301524 instance=ExtResource("22_f8ci1")]
 position = Vector2(5220, 960)
 scale = Vector2(10, 1)
+
+[node name="death_zone2" parent="DeathZones" unique_id=616708962 instance=ExtResource("22_f8ci1")]
+position = Vector2(15420, 560)
+scale = Vector2(5, 1)
