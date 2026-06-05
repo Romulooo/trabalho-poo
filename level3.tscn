@@ -508,16 +508,14 @@ position = Vector2(4942, -192)
 [node name="Spikes7" parent="Spikes" unique_id=372237232 instance=ExtResource("18_2272n")]
 position = Vector2(9337, -1155)
 
+[node name="Mushroom3" parent="." unique_id=2056630786 instance=ExtResource("20_utqry")]
+position = Vector2(4744, -645)
+
+[node name="Mushroom4" parent="." unique_id=111150080 instance=ExtResource("20_utqry")]
+position = Vector2(8759, 31)
+
 [node name="Mushroom" parent="." unique_id=111424788 instance=ExtResource("20_utqry")]
 position = Vector2(3996.0002, -645)
-
-[node name="Mushroom2" parent="Mushroom" unique_id=2056630786 instance=ExtResource("20_utqry")]
-position = Vector2(124.666626, 0)
-scale = Vector2(1, 1)
-
-[node name="Mushroom3" parent="Mushroom" unique_id=111150080 instance=ExtResource("20_utqry")]
-position = Vector2(793.8333, 112.666664)
-scale = Vector2(1, 1)
 
 [node name="Bee" parent="." unique_id=1064858923 instance=ExtResource("21_gaofk")]
 position = Vector2(6258, -902)
