@@ -407,10 +407,10 @@ player2 = NodePath("../Player2")
 
 [node name="Player" parent="." unique_id=1316077864 instance=ExtResource("8_52iny")]
 z_index = 1
-position = Vector2(14060, 140)
+position = Vector2(464, 352)
 
-[node name="Player2" parent="." unique_id=555871169 instance=ExtResource("9_nxqqj")]
-position = Vector2(14560, 180)
+[node name="Player2" parent="." unique_id=799543644 instance=ExtResource("9_nxqqj")]
+position = Vector2(262, 354)
 
 [node name="FallingPlatforms" type="Node" parent="." unique_id=1710706292]
 
