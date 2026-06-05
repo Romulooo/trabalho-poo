@@ -21,6 +21,7 @@
 [ext_resource type="PackedScene" uid="uid://cq2xi4bu6sc8b" path="res://Objects/Trampoline/trampoline.tscn" id="19_bs5pn"]
 [ext_resource type="PackedScene" uid="uid://15hj6yflyxwy" path="res://Enemies/Mushroom/mushroom.tscn" id="20_utqry"]
 [ext_resource type="PackedScene" uid="uid://b1yaopeba6nqc" path="res://Enemies/Bee/bee.tscn" id="21_gaofk"]
+[ext_resource type="PackedScene" uid="uid://c6kcet8ykna1k" path="res://Objects/death_zone.tscn" id="22_gaofk"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kgaxw"]
 texture = ExtResource("4_2272n")
@@ -530,3 +531,27 @@ scale = Vector2(1, 1)
 
 [node name="Bee3" parent="." unique_id=1085305660 instance=ExtResource("21_gaofk")]
 position = Vector2(12986, -1084)
+
+[node name="death_zone" parent="." unique_id=697301524 instance=ExtResource("22_gaofk")]
+position = Vector2(1871, 774)
+
+[node name="death_zone2" parent="." unique_id=1483041067 instance=ExtResource("22_gaofk")]
+position = Vector2(2848, 475)
+
+[node name="death_zone3" parent="." unique_id=1020017044 instance=ExtResource("22_gaofk")]
+position = Vector2(3662, 475)
+
+[node name="death_zone4" parent="." unique_id=2051203994 instance=ExtResource("22_gaofk")]
+position = Vector2(4747, 589)
+
+[node name="death_zone5" parent="." unique_id=1328392137 instance=ExtResource("22_gaofk")]
+position = Vector2(6940, 595)
+
+[node name="death_zone6" parent="." unique_id=1158180300 instance=ExtResource("22_gaofk")]
+position = Vector2(10803, 425)
+
+[node name="death_zone7" parent="." unique_id=16769574 instance=ExtResource("22_gaofk")]
+position = Vector2(12002, 425)
+
+[node name="death_zone8" parent="." unique_id=861268538 instance=ExtResource("22_gaofk")]
+position = Vector2(13223, 432)
