@@ -424,10 +424,10 @@ player2 = NodePath("../Player2")
 
 [node name="Player" parent="." unique_id=1316077864 instance=ExtResource("2_i6w5t")]
 z_index = 1
-position = Vector2(10232, -52)
+position = Vector2(874, 428)
 
 [node name="Player2" parent="." unique_id=1083124236 instance=ExtResource("3_l2pgs")]
-position = Vector2(10233, -702)
+position = Vector2(613, 421)
 
 [node name="TileMap" type="TileMap" parent="." unique_id=61289706]
 scale = Vector2(6, 6)
