@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cf8lfvx4uvvuh"]
 
 [ext_resource type="Script" uid="uid://cgpn4ea4l6tpw" path="res://Scripts/CameraFollow.gd" id="1_8i3m3"]
-[ext_resource type="Script" uid="uid://cly2hi4n4mnhg" path="res://level_2.gd" id="1_iakae"]
+[ext_resource type="Script" uid="uid://cly2hi4n4mnhg" path="res://Levels/level_2.gd" id="1_iakae"]
 [ext_resource type="PackedScene" uid="uid://dp41660bgeu5j" path="res://Players/player1.tscn" id="2_rmy57"]
 [ext_resource type="PackedScene" uid="uid://dcevq0fpqjy42" path="res://Players/player2.tscn" id="3_qulpo"]
 [ext_resource type="Texture2D" uid="uid://cweegkmvxkrmw" path="res://Sprites/Terrain/Terrain (16x16).png" id="4_8i3m3"]
@@ -408,10 +408,10 @@ player2 = NodePath("../Player2")
 
 [node name="Player" parent="." unique_id=1316077864 instance=ExtResource("2_rmy57")]
 z_index = 1
-position = Vector2(545, 359)
+position = Vector2(640, 420)
 
 [node name="Player2" parent="." unique_id=1626768893 instance=ExtResource("3_qulpo")]
-position = Vector2(262, 354)
+position = Vector2(480, 420)
 
 [node name="FallingPlatforms" type="Node" parent="." unique_id=2002883090]
 

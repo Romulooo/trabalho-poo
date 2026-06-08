@@ -20,5 +20,8 @@ func get_visibility() -> void:
 	elif scene == "Level2":
 		visible = true
 		$AnimatedSprite2D.play("idleKiwi")
+	elif scene == "Level3":
+		visible = false
+		$AnimatedSprite2D.play("idleKiwi")
 	else:
 		visible = false

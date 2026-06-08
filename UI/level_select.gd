@@ -13,24 +13,32 @@ func _ready() -> void:
 	
 
 func _on_back_pressed() -> void:
-	get_tree().change_scene_to_file("res://main_menu.tscn")
+	get_tree().change_scene_to_file("res://UI/main_menu.tscn")
 
 
 
 func _on_button_level_1_pressed() -> void:
 	await Transition.fade_in(0.5)
-	get_tree().change_scene_to_file("res://level1.tscn")
+	get_tree().change_scene_to_file("res://levels/level1.tscn")
 	await Transition.fade_out(0.5)
 
 
 func _on_button_level_2_pressed() -> void:
 	if GameManager.level >= 2:
 		await Transition.fade_in(0.5)
-		get_tree().change_scene_to_file("res://level2.tscn")
+		get_tree().change_scene_to_file("res://levels/level2.tscn")
 		await Transition.fade_out(0.5)
 		
+
+func _on_button_level_3_pressed() -> void:
+	if GameManager.level >= 3:
+		await Transition.fade_in(0.5)
+		get_tree().change_scene_to_file("res://levels/level3.tscn")
+		await Transition.fade_out(0.5)
+
+		
 func _on_button_level_1_mouse_entered() -> void:
-	$GridContainer/ButtonLevel1.modulate = Color(1.5, 1.5, 1.5)
+	$GridContainer/ButtonLevel1.modulate = Color(1.2, 1.2, 1.2)
 
 
 func _on_button_level_1_mouse_exited() -> void:
@@ -39,7 +47,7 @@ func _on_button_level_1_mouse_exited() -> void:
 
 func _on_button_level_2_mouse_entered() -> void:
 	if GameManager.level >= 2:
-		$GridContainer/ButtonLevel2.modulate = Color(1.5, 1.5, 1.5)
+		$GridContainer/ButtonLevel2.modulate = Color(1.2, 1.2, 1.2)
 
 func _on_button_level_2_mouse_exited() -> void:
 	if GameManager.level >= 2:
@@ -47,7 +55,7 @@ func _on_button_level_2_mouse_exited() -> void:
 
 func _on_button_level_3_mouse_entered() -> void:
 	if GameManager.level >= 3:
-		$GridContainer/ButtonLevel3.modulate = Color(1.5, 1.5, 1.5)
+		$GridContainer/ButtonLevel3.modulate = Color(1.2, 1.2, 1.2)
 
 func _on_button_level_3_mouse_exited() -> void:
 	if GameManager.level >= 3:

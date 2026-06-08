@@ -1,28 +1,24 @@
-[gd_scene format=3 uid="uid://dlufxoc6c4cf6"]
+[gd_scene format=3 uid="uid://chu44avco4jav"]
 
-[ext_resource type="Texture2D" uid="uid://c13uoadwemg2a" path="res://Sprites/UI/Button.png" id="1_fu7sn"]
-[ext_resource type="Script" uid="uid://ckte4cfh6ewre" path="res://UI/main_menu.gd" id="1_glbon"]
-[ext_resource type="FontFile" uid="uid://ffxdr40ylyvi" path="res://UI/PixelifySans-VariableFont_wght.ttf" id="1_jix8l"]
-[ext_resource type="Texture2D" uid="uid://cue3egcitarqf" path="res://Sprites/UI/ButtonClick.png" id="2_jix8l"]
-[ext_resource type="Texture2D" uid="uid://c1cywo8ewscgc" path="res://Sprites/UI/ButtonHoover.png" id="3_glbon"]
-[ext_resource type="Texture2D" uid="uid://cweegkmvxkrmw" path="res://Sprites/Terrain/Terrain (16x16).png" id="6_0k4wn"]
-[ext_resource type="Texture2D" uid="uid://dwfjfnlef15ig" path="res://Sprites/Background/Green.png" id="7_j5v2v"]
-[ext_resource type="Texture2D" uid="uid://dc80hd7sdok6x" path="res://Sprites/Background/Brown.png" id="8_iotk1"]
-[ext_resource type="Texture2D" uid="uid://bj07t52xcgfpa" path="res://Sprites/Background/Yellow.png" id="9_w44g7"]
-[ext_resource type="Texture2D" uid="uid://dguxvjbrw348m" path="res://Sprites/Background/Blue.png" id="10_cm266"]
-[ext_resource type="Texture2D" uid="uid://c0vqb2ibf60bs" path="res://Sprites/Background/Gray.png" id="11_g8g3n"]
+[ext_resource type="Script" uid="uid://8a3gd316s825" path="res://UI/level_select.gd" id="1_cd8ej"]
+[ext_resource type="Texture2D" uid="uid://b6i6j3tqexc5x" path="res://Sprites/UI/Arrow.png" id="2_cod72"]
+[ext_resource type="Texture2D" uid="uid://5cdg8gp00q21" path="res://Sprites/UI/LevelButtonBackground.png" id="3_62ssf"]
+[ext_resource type="Texture2D" uid="uid://dq7h2eheew1vc" path="res://UI/Buttons/Level1.png" id="4_lffff"]
+[ext_resource type="FontFile" uid="uid://ffxdr40ylyvi" path="res://UI/PixelifySans-VariableFont_wght.ttf" id="5_rsvb7"]
+[ext_resource type="Texture2D" uid="uid://braedgkscy2s0" path="res://UI/Buttons/Level2.png" id="6_cod72"]
+[ext_resource type="Texture2D" uid="uid://cweegkmvxkrmw" path="res://Sprites/Terrain/Terrain (16x16).png" id="6_eh4xk"]
+[ext_resource type="Texture2D" uid="uid://b4t4i0uuphq7n" path="res://UI/Buttons/Level3.png" id="7_62ssf"]
+[ext_resource type="Texture2D" uid="uid://dwfjfnlef15ig" path="res://Sprites/Background/Green.png" id="7_nif6o"]
+[ext_resource type="Texture2D" uid="uid://dc80hd7sdok6x" path="res://Sprites/Background/Brown.png" id="8_85jdw"]
+[ext_resource type="Texture2D" uid="uid://bj07t52xcgfpa" path="res://Sprites/Background/Yellow.png" id="9_qk6sb"]
+[ext_resource type="Texture2D" uid="uid://dguxvjbrw348m" path="res://Sprites/Background/Blue.png" id="10_4vepe"]
+[ext_resource type="Texture2D" uid="uid://c0vqb2ibf60bs" path="res://Sprites/Background/Gray.png" id="11_4veh4"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nlkkf"]
-texture = ExtResource("1_fu7sn")
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_apu6u"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_qe12f"]
-texture = ExtResource("2_jix8l")
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_8qtwp"]
-texture = ExtResource("3_glbon")
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8u0te"]
-texture = ExtResource("6_0k4wn")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_05pd3"]
+texture = ExtResource("6_eh4xk")
 use_texture_padding = false
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -285,8 +281,8 @@ use_texture_padding = false
 20:10/0 = 0
 20:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oiatc"]
-texture = ExtResource("7_j5v2v")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hhsoe"]
+texture = ExtResource("7_nif6o")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -304,8 +300,8 @@ texture = ExtResource("7_j5v2v")
 2:3/0 = 0
 3:3/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mg3m2"]
-texture = ExtResource("8_iotk1")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rtb5x"]
+texture = ExtResource("8_85jdw")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -323,8 +319,8 @@ texture = ExtResource("8_iotk1")
 2:3/0 = 0
 3:3/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ojb7r"]
-texture = ExtResource("9_w44g7")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vnx2f"]
+texture = ExtResource("9_qk6sb")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -342,8 +338,8 @@ texture = ExtResource("9_w44g7")
 2:3/0 = 0
 3:3/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e5qqf"]
-texture = ExtResource("10_cm266")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7pkux"]
+texture = ExtResource("10_4vepe")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -361,8 +357,8 @@ texture = ExtResource("10_cm266")
 2:3/0 = 0
 3:3/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7bbuq"]
-texture = ExtResource("11_g8g3n")
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_851in"]
+texture = ExtResource("11_4veh4")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -380,25 +376,40 @@ texture = ExtResource("11_g8g3n")
 2:3/0 = 0
 3:3/0 = 0
 
-[sub_resource type="TileSet" id="TileSet_saq78"]
+[sub_resource type="TileSet" id="TileSet_vebhf"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_8u0te")
-sources/1 = SubResource("TileSetAtlasSource_oiatc")
-sources/2 = SubResource("TileSetAtlasSource_mg3m2")
-sources/3 = SubResource("TileSetAtlasSource_ojb7r")
-sources/5 = SubResource("TileSetAtlasSource_e5qqf")
-sources/6 = SubResource("TileSetAtlasSource_7bbuq")
+sources/0 = SubResource("TileSetAtlasSource_05pd3")
+sources/1 = SubResource("TileSetAtlasSource_hhsoe")
+sources/2 = SubResource("TileSetAtlasSource_rtb5x")
+sources/3 = SubResource("TileSetAtlasSource_vnx2f")
+sources/5 = SubResource("TileSetAtlasSource_7pkux")
+sources/6 = SubResource("TileSetAtlasSource_851in")
 
-[node name="MainMenu" type="Control" unique_id=1850957777]
+[node name="LevelSelect" type="Control" unique_id=1375777757]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_glbon")
+script = ExtResource("1_cd8ej")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1477882975]
+[node name="Back" type="Button" parent="." unique_id=1234422259]
+z_index = 2
+layout_mode = 0
+offset_left = 60.0
+offset_top = 60.0
+offset_right = 104.0
+offset_bottom = 101.0
+rotation = 3.1415927
+theme_override_styles/hover = SubResource("StyleBoxFlat_apu6u")
+icon = ExtResource("2_cod72")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1999479566]
 z_index = 2
 layout_mode = 1
 anchors_preset = 8
@@ -406,45 +417,162 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -108.0
-offset_top = -108.0
-offset_right = 108.0
-offset_bottom = 108.0
+offset_left = -360.0
+offset_top = -100.0
+offset_right = 360.0
+offset_bottom = 100.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 40
-alignment = 1
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 0
+columns = 3
 
-[node name="ButtonPlay" type="Button" parent="VBoxContainer" unique_id=977633898]
-custom_minimum_size = Vector2(0, 60)
+[node name="ButtonLevel1" type="Button" parent="GridContainer" unique_id=991070521]
+custom_minimum_size = Vector2(220, 200)
 layout_mode = 2
-theme_override_colors/font_color = Color(0.78039217, 0.5372549, 0.3647059, 1)
-theme_override_fonts/font = ExtResource("1_jix8l")
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxTexture_nlkkf")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_qe12f")
-theme_override_styles/hover = SubResource("StyleBoxTexture_8qtwp")
-text = "Jogar"
+flat = true
+icon_alignment = 1
 
-[node name="ButtonQuit" type="Button" parent="VBoxContainer" unique_id=187584543]
-custom_minimum_size = Vector2(0, 60)
+[node name="VBoxContainer" type="VBoxContainer" parent="GridContainer/ButtonLevel1" unique_id=1547358412]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/ButtonLevel1/VBoxContainer" unique_id=1631942449]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.78039217, 0.5372549, 0.3647059, 1)
-theme_override_fonts/font = ExtResource("1_jix8l")
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxTexture_nlkkf")
-theme_override_styles/pressed = SubResource("StyleBoxTexture_qe12f")
-theme_override_styles/hover = SubResource("StyleBoxTexture_8qtwp")
-text = "Sair"
+mouse_filter = 2
+texture = ExtResource("3_62ssf")
+stretch_mode = 5
 
-[node name="TileMap" type="TileMap" parent="." unique_id=1966621591]
+[node name="LevelTexture" type="TextureRect" parent="GridContainer/ButtonLevel1/VBoxContainer/TextureRect" unique_id=892800695]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.32226
+offset_top = -68.75
+offset_right = 96.32226
+offset_bottom = 68.75
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_lffff")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="GridContainer/ButtonLevel1/VBoxContainer" unique_id=610143203]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_rsvb7")
+theme_override_font_sizes/font_size = 20
+text = "Nível 1"
+horizontal_alignment = 1
+
+[node name="ButtonLevel2" type="Button" parent="GridContainer" unique_id=1789349123]
+custom_minimum_size = Vector2(220, 200)
+layout_mode = 2
+flat = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GridContainer/ButtonLevel2" unique_id=107725938]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/ButtonLevel2/VBoxContainer" unique_id=905315139]
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("3_62ssf")
+stretch_mode = 5
+
+[node name="LevelTexture" type="TextureRect" parent="GridContainer/ButtonLevel2/VBoxContainer/TextureRect" unique_id=352391612]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.32226
+offset_top = -68.75
+offset_right = 96.32226
+offset_bottom = 68.75
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_cod72")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="GridContainer/ButtonLevel2/VBoxContainer" unique_id=379839227]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_rsvb7")
+theme_override_font_sizes/font_size = 20
+text = "Nível 2"
+horizontal_alignment = 1
+
+[node name="ButtonLevel3" type="Button" parent="GridContainer" unique_id=876086519]
+custom_minimum_size = Vector2(220, 200)
+layout_mode = 2
+flat = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="GridContainer/ButtonLevel3" unique_id=965080125]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TextureRect" type="TextureRect" parent="GridContainer/ButtonLevel3/VBoxContainer" unique_id=72947352]
+layout_mode = 2
+mouse_filter = 2
+texture = ExtResource("3_62ssf")
+stretch_mode = 5
+
+[node name="LevelTexture" type="TextureRect" parent="GridContainer/ButtonLevel3/VBoxContainer/TextureRect" unique_id=1768649947]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -96.32226
+offset_top = -68.75
+offset_right = 96.32226
+offset_bottom = 68.75
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_62ssf")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="GridContainer/ButtonLevel3/VBoxContainer" unique_id=1798478261]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("5_rsvb7")
+theme_override_font_sizes/font_size = 20
+text = "Nível 3"
+horizontal_alignment = 1
+
+[node name="TileMap" type="TileMap" parent="." unique_id=242180729]
 scale = Vector2(6, 6)
-tile_set = SubResource("TileSet_saq78")
+tile_set = SubResource("TileSet_vebhf")
 format = 2
 layer_0/name = "Layer1"
 layer_0/z_index = 1
 layer_0/tile_data = PackedInt32Array(0, 6, 0, 65536, 6, 1, 131072, 6, 2, 196608, 6, 3, 1, 65542, 0, 65537, 65542, 1, 131073, 65542, 2, 196609, 65542, 3, 2, 131078, 0, 65538, 131078, 1, 131074, 131078, 2, 196610, 131078, 3, 3, 196614, 0, 65539, 196614, 1, 131075, 196614, 2, 196611, 196614, 3, 4, 6, 0, 65540, 6, 1, 131076, 6, 2, 196612, 6, 3, 5, 65542, 0, 65541, 65542, 1, 131077, 65542, 2, 196613, 65542, 3, 6, 131078, 0, 65542, 131078, 1, 131078, 131078, 2, 196614, 131078, 3, 7, 196614, 0, 65543, 196614, 1, 131079, 196614, 2, 196615, 196614, 3, 8, 6, 0, 65544, 6, 1, 131080, 6, 2, 196616, 6, 3, 9, 65542, 0, 65545, 65542, 1, 131081, 65542, 2, 196617, 65542, 3, 10, 131078, 0, 65546, 131078, 1, 131082, 131078, 2, 196618, 131078, 3, 11, 196614, 0, 65547, 196614, 1, 131083, 196614, 2, 196619, 196614, 3, 262152, 6, 0, 327688, 6, 1, 393224, 6, 2, 262153, 65542, 0, 327689, 65542, 1, 393225, 65542, 2, 262154, 131078, 0, 327690, 131078, 1, 393226, 131078, 2, 262155, 196614, 0, 327691, 196614, 1, 393227, 196614, 2, 262148, 6, 0, 327684, 6, 1, 393220, 6, 2, 262149, 65542, 0, 327685, 65542, 1, 393221, 65542, 2, 262150, 131078, 0, 327686, 131078, 1, 393222, 131078, 2, 262151, 196614, 0, 327687, 196614, 1, 393223, 196614, 2, 262144, 6, 0, 327680, 6, 1, 262145, 65542, 0, 327681, 65542, 1, 262146, 131078, 0, 327682, 131078, 1, 262147, 196614, 0, 327683, 196614, 1, 393216, 6, 2, 393217, 65542, 2, 393218, 131078, 2, 393219, 196614, 2)
 layer_1/name = "Layer2"
 
-[connection signal="pressed" from="VBoxContainer/ButtonPlay" to="." method="_on_button_play_pressed"]
-[connection signal="pressed" from="VBoxContainer/ButtonQuit" to="." method="_on_button_quit_pressed"]
+[connection signal="pressed" from="Back" to="." method="_on_back_pressed"]
+[connection signal="mouse_entered" from="GridContainer/ButtonLevel1" to="." method="_on_button_level_1_mouse_entered"]
+[connection signal="mouse_exited" from="GridContainer/ButtonLevel1" to="." method="_on_button_level_1_mouse_exited"]
+[connection signal="pressed" from="GridContainer/ButtonLevel1" to="." method="_on_button_level_1_pressed"]
+[connection signal="mouse_entered" from="GridContainer/ButtonLevel2" to="." method="_on_button_level_2_mouse_entered"]
+[connection signal="mouse_exited" from="GridContainer/ButtonLevel2" to="." method="_on_button_level_2_mouse_exited"]
+[connection signal="pressed" from="GridContainer/ButtonLevel2" to="." method="_on_button_level_2_pressed"]
+[connection signal="mouse_entered" from="GridContainer/ButtonLevel3" to="." method="_on_button_level_3_mouse_entered"]
+[connection signal="mouse_exited" from="GridContainer/ButtonLevel3" to="." method="_on_button_level_3_mouse_exited"]
+[connection signal="pressed" from="GridContainer/ButtonLevel3" to="." method="_on_button_level_3_pressed"]

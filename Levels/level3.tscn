@@ -1,30 +1,31 @@
 [gd_scene format=3 uid="uid://b7wxn2ya6avaq"]
 
-[ext_resource type="Script" uid="uid://cgpn4ea4l6tpw" path="res://Scripts/CameraFollow.gd" id="1_qoi87"]
-[ext_resource type="PackedScene" uid="uid://dp41660bgeu5j" path="res://Players/player1.tscn" id="2_i6w5t"]
-[ext_resource type="PackedScene" uid="uid://dcevq0fpqjy42" path="res://Players/player2.tscn" id="3_l2pgs"]
-[ext_resource type="Texture2D" uid="uid://cweegkmvxkrmw" path="res://Sprites/Terrain/Terrain (16x16).png" id="4_2272n"]
-[ext_resource type="Texture2D" uid="uid://dwfjfnlef15ig" path="res://Sprites/Background/Green.png" id="5_bs5pn"]
-[ext_resource type="Texture2D" uid="uid://dc80hd7sdok6x" path="res://Sprites/Background/Brown.png" id="6_utqry"]
-[ext_resource type="Texture2D" uid="uid://bj07t52xcgfpa" path="res://Sprites/Background/Yellow.png" id="7_gaofk"]
-[ext_resource type="Texture2D" uid="uid://ydfjiwh2lbjj" path="res://Sprites/Background/Pink.png" id="8_itrrf"]
-[ext_resource type="Texture2D" uid="uid://brqf5255ueo05" path="res://Sprites/Terrain/Decoration/arrow_plate_left.png" id="9_mr4ff"]
-[ext_resource type="Texture2D" uid="uid://cdsluilthgkdk" path="res://Sprites/Terrain/Decoration/arrow_plate_right.png" id="10_0bsag"]
-[ext_resource type="Texture2D" uid="uid://cqgl1ydcqimmx" path="res://Sprites/Terrain/Decoration/wooden_plate.png" id="11_s3sn0"]
-[ext_resource type="Texture2D" uid="uid://c40lhjmcggdfy" path="res://Sprites/Terrain/Decoration/drygrass_props.png" id="12_7s766"]
-[ext_resource type="Texture2D" uid="uid://bgrw60g8b1hel" path="res://Sprites/Terrain/Decoration/roots_props.png" id="13_dev55"]
-[ext_resource type="Texture2D" uid="uid://cq17c7dc4ovfd" path="res://Sprites/Terrain/Decoration/bigflowers_props.png" id="14_r45hk"]
-[ext_resource type="Texture2D" uid="uid://deqrdg0c5736t" path="res://Sprites/Terrain/Decoration/flowers_props.png" id="15_h74q7"]
-[ext_resource type="Texture2D" uid="uid://mdxchtvtryhm" path="res://Sprites/Terrain/Decoration/grass_props.png" id="16_tqa8r"]
-[ext_resource type="PackedScene" uid="uid://cjcjffeovs6es" path="res://Objects/FallingPlatform/falling_platform.tscn" id="17_i6w5t"]
-[ext_resource type="PackedScene" uid="uid://dn34a2n5ad44a" path="res://Objects/Spike/spikes.tscn" id="18_2272n"]
-[ext_resource type="PackedScene" uid="uid://cq2xi4bu6sc8b" path="res://Objects/Trampoline/trampoline.tscn" id="19_bs5pn"]
-[ext_resource type="PackedScene" uid="uid://15hj6yflyxwy" path="res://Enemies/Mushroom/mushroom.tscn" id="20_utqry"]
-[ext_resource type="PackedScene" uid="uid://b1yaopeba6nqc" path="res://Enemies/Bee/bee.tscn" id="21_gaofk"]
-[ext_resource type="PackedScene" uid="uid://c6kcet8ykna1k" path="res://Objects/death_zone.tscn" id="22_gaofk"]
+[ext_resource type="Script" uid="uid://cgpn4ea4l6tpw" path="res://Scripts/CameraFollow.gd" id="1_mltr5"]
+[ext_resource type="Script" uid="uid://dvbiaf6f4ig2l" path="res://Levels/level_3.gd" id="1_povm2"]
+[ext_resource type="PackedScene" uid="uid://dp41660bgeu5j" path="res://Players/player1.tscn" id="2_povm2"]
+[ext_resource type="PackedScene" uid="uid://dcevq0fpqjy42" path="res://Players/player2.tscn" id="3_6gg2j"]
+[ext_resource type="Texture2D" uid="uid://cweegkmvxkrmw" path="res://Sprites/Terrain/Terrain (16x16).png" id="4_i5kxt"]
+[ext_resource type="Texture2D" uid="uid://dwfjfnlef15ig" path="res://Sprites/Background/Green.png" id="5_mhpgx"]
+[ext_resource type="Texture2D" uid="uid://dc80hd7sdok6x" path="res://Sprites/Background/Brown.png" id="6_03ogs"]
+[ext_resource type="Texture2D" uid="uid://bj07t52xcgfpa" path="res://Sprites/Background/Yellow.png" id="7_3crih"]
+[ext_resource type="Texture2D" uid="uid://ydfjiwh2lbjj" path="res://Sprites/Background/Pink.png" id="8_82mhd"]
+[ext_resource type="Texture2D" uid="uid://brqf5255ueo05" path="res://Sprites/Terrain/Decoration/arrow_plate_left.png" id="9_vesys"]
+[ext_resource type="Texture2D" uid="uid://cdsluilthgkdk" path="res://Sprites/Terrain/Decoration/arrow_plate_right.png" id="10_22uwy"]
+[ext_resource type="Texture2D" uid="uid://cqgl1ydcqimmx" path="res://Sprites/Terrain/Decoration/wooden_plate.png" id="11_4ahe2"]
+[ext_resource type="Texture2D" uid="uid://c40lhjmcggdfy" path="res://Sprites/Terrain/Decoration/drygrass_props.png" id="12_vmko2"]
+[ext_resource type="Texture2D" uid="uid://bgrw60g8b1hel" path="res://Sprites/Terrain/Decoration/roots_props.png" id="13_f2d62"]
+[ext_resource type="Texture2D" uid="uid://cq17c7dc4ovfd" path="res://Sprites/Terrain/Decoration/bigflowers_props.png" id="14_htyga"]
+[ext_resource type="Texture2D" uid="uid://deqrdg0c5736t" path="res://Sprites/Terrain/Decoration/flowers_props.png" id="15_4x0ip"]
+[ext_resource type="Texture2D" uid="uid://mdxchtvtryhm" path="res://Sprites/Terrain/Decoration/grass_props.png" id="16_1ulpc"]
+[ext_resource type="PackedScene" uid="uid://cjcjffeovs6es" path="res://Objects/FallingPlatform/falling_platform.tscn" id="17_gy6ml"]
+[ext_resource type="PackedScene" uid="uid://cq2xi4bu6sc8b" path="res://Objects/Trampoline/trampoline.tscn" id="18_t02yq"]
+[ext_resource type="PackedScene" uid="uid://dn34a2n5ad44a" path="res://Objects/Spike/spikes.tscn" id="19_sefh5"]
+[ext_resource type="PackedScene" uid="uid://15hj6yflyxwy" path="res://Enemies/Mushroom/mushroom.tscn" id="20_jxp73"]
+[ext_resource type="PackedScene" uid="uid://b1yaopeba6nqc" path="res://Enemies/Bee/bee.tscn" id="21_cs31o"]
+[ext_resource type="PackedScene" uid="uid://c6kcet8ykna1k" path="res://Objects/death_zone.tscn" id="22_p5mv7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kgaxw"]
-texture = ExtResource("4_2272n")
+texture = ExtResource("4_i5kxt")
 use_texture_padding = false
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -288,7 +289,7 @@ use_texture_padding = false
 20:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_o421a"]
-texture = ExtResource("5_bs5pn")
+texture = ExtResource("5_mhpgx")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -307,7 +308,7 @@ texture = ExtResource("5_bs5pn")
 3:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j2bfk"]
-texture = ExtResource("6_utqry")
+texture = ExtResource("6_03ogs")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -326,7 +327,7 @@ texture = ExtResource("6_utqry")
 3:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5flpd"]
-texture = ExtResource("7_gaofk")
+texture = ExtResource("7_3crih")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -345,7 +346,7 @@ texture = ExtResource("7_gaofk")
 3:3/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s3kti"]
-texture = ExtResource("8_itrrf")
+texture = ExtResource("8_82mhd")
 0:0/0 = 0
 1:0/0 = 0
 2:0/0 = 0
@@ -372,35 +373,35 @@ sources/3 = SubResource("TileSetAtlasSource_5flpd")
 sources/4 = SubResource("TileSetAtlasSource_s3kti")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qbfqj"]
-texture = ExtResource("9_mr4ff")
+texture = ExtResource("9_vesys")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gr4vk"]
-texture = ExtResource("10_0bsag")
+texture = ExtResource("10_22uwy")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tnnie"]
-texture = ExtResource("11_s3sn0")
+texture = ExtResource("11_4ahe2")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kp2hi"]
-texture = ExtResource("12_7s766")
+texture = ExtResource("12_vmko2")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1qwjn"]
-texture = ExtResource("13_dev55")
+texture = ExtResource("13_f2d62")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1vlh0"]
-texture = ExtResource("14_r45hk")
+texture = ExtResource("14_htyga")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_joel0"]
-texture = ExtResource("15_h74q7")
+texture = ExtResource("15_4x0ip")
 0:0/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5bamp"]
-texture = ExtResource("16_tqa8r")
+texture = ExtResource("16_1ulpc")
 0:0/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_5hmwf"]
@@ -414,21 +415,22 @@ sources/3 = SubResource("TileSetAtlasSource_kp2hi")
 sources/4 = SubResource("TileSetAtlasSource_1qwjn")
 
 [node name="Level3" type="Node2D" unique_id=421410505]
+script = ExtResource("1_povm2")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=544731576 node_paths=PackedStringArray("player1", "player2")]
 z_index = 2
 zoom = Vector2(0.35, 0.35)
 position_smoothing_enabled = true
-script = ExtResource("1_qoi87")
+script = ExtResource("1_mltr5")
 player1 = NodePath("../Player")
 player2 = NodePath("../Player2")
 
-[node name="Player" parent="." unique_id=1316077864 instance=ExtResource("2_i6w5t")]
+[node name="Player" parent="." unique_id=1316077864 instance=ExtResource("2_povm2")]
 z_index = 1
-position = Vector2(874, 428)
+position = Vector2(2920, -440)
 
-[node name="Player2" parent="." unique_id=1083124236 instance=ExtResource("3_l2pgs")]
-position = Vector2(613, 421)
+[node name="Player2" parent="." unique_id=1083124236 instance=ExtResource("3_6gg2j")]
+position = Vector2(2340, 0)
 
 [node name="TileMap" type="TileMap" parent="." unique_id=61289706]
 scale = Vector2(6, 6)
@@ -445,111 +447,111 @@ tile_set = SubResource("TileSet_5hmwf")
 format = 2
 layer_0/tile_data = PackedInt32Array(262151, 1, 0, 262154, 6, 0, 23, 6, 0, -131066, 5, 0, -196597, 6, 0, -589835, 5, 0, -589827, 5, 0, -196604, 5, 0, -458707, 6, 0, -458698, 6, 0, -458693, 5, 0, -262078, 5, 0, 70, 5, 0, -130939, 4, 0, -130929, 4, 0, -196548, 4, 0, -131033, 4, 0, -131032, 4, 0, -131031, 4, 0, -131020, 4, 0, -131021, 4, 0, 65546, 4, 0, 65545, 4, 0, 65544, 4, 0, 65543, 4, 0, -131075, 4, 0, -458709, 6, 0, 33, 6, 0, 84, 6, 0, 96, 6, 0, 79, 6, 0, -458639, 6, 0, -65399, 6, 0, -65393, 6, 0, -65404, 5, 0, -458619, 5, 0, -458612, 6, 0, -458596, 2, 0, -458599, 6, 0)
 
-[node name="falling_platform" parent="." unique_id=1562064965 instance=ExtResource("17_i6w5t")]
+[node name="falling_platform" parent="." unique_id=1562064965 instance=ExtResource("17_gy6ml")]
 position = Vector2(1523, -336)
 
-[node name="falling_platform" parent="falling_platform" unique_id=1263131026 instance=ExtResource("17_i6w5t")]
+[node name="falling_platform" parent="falling_platform" unique_id=1263131026 instance=ExtResource("17_gy6ml")]
 position = Vector2(986, -226)
 
-[node name="Trampoline" parent="." unique_id=288246974 instance=ExtResource("19_bs5pn")]
+[node name="Trampoline" parent="." unique_id=288246974 instance=ExtResource("18_t02yq")]
 position = Vector2(1785, 398)
 
-[node name="Spikes" parent="." unique_id=1058484094 instance=ExtResource("18_2272n")]
+[node name="Spikes" parent="." unique_id=1058484094 instance=ExtResource("19_sefh5")]
 position = Vector2(1284, 436)
 
-[node name="Spikes9" parent="Spikes" unique_id=1819975971 instance=ExtResource("18_2272n")]
+[node name="Spikes9" parent="Spikes" unique_id=1819975971 instance=ExtResource("19_sefh5")]
 position = Vector2(8073, -1)
 
-[node name="Spikes10" parent="Spikes" unique_id=628112365 instance=ExtResource("18_2272n")]
+[node name="Spikes10" parent="Spikes" unique_id=628112365 instance=ExtResource("19_sefh5")]
 position = Vector2(8162, -3)
 
-[node name="Spikes11" parent="Spikes" unique_id=1520932966 instance=ExtResource("18_2272n")]
+[node name="Spikes11" parent="Spikes" unique_id=1520932966 instance=ExtResource("19_sefh5")]
 position = Vector2(8250, -3)
 
-[node name="Spikes12" parent="Spikes" unique_id=486514121 instance=ExtResource("18_2272n")]
+[node name="Spikes12" parent="Spikes" unique_id=486514121 instance=ExtResource("19_sefh5")]
 position = Vector2(8339, -3)
 
-[node name="Spikes13" parent="Spikes" unique_id=1025752778 instance=ExtResource("18_2272n")]
+[node name="Spikes13" parent="Spikes" unique_id=1025752778 instance=ExtResource("19_sefh5")]
 position = Vector2(8426, -1)
 
-[node name="Spikes14" parent="Spikes" unique_id=1556444074 instance=ExtResource("18_2272n")]
+[node name="Spikes14" parent="Spikes" unique_id=1556444074 instance=ExtResource("19_sefh5")]
 position = Vector2(8512, -3)
 
-[node name="Spikes8" parent="Spikes" unique_id=564662658 instance=ExtResource("18_2272n")]
+[node name="Spikes8" parent="Spikes" unique_id=564662658 instance=ExtResource("19_sefh5")]
 position = Vector2(9429, -1154)
 
-[node name="Spikes15" parent="Spikes" unique_id=601683184 instance=ExtResource("18_2272n")]
+[node name="Spikes15" parent="Spikes" unique_id=601683184 instance=ExtResource("19_sefh5")]
 position = Vector2(8599, -1)
 
-[node name="Spikes16" parent="Spikes" unique_id=1388751314 instance=ExtResource("18_2272n")]
+[node name="Spikes16" parent="Spikes" unique_id=1388751314 instance=ExtResource("19_sefh5")]
 position = Vector2(8690, 1)
 
-[node name="Spikes17" parent="Spikes" unique_id=145249138 instance=ExtResource("18_2272n")]
+[node name="Spikes17" parent="Spikes" unique_id=145249138 instance=ExtResource("19_sefh5")]
 position = Vector2(8767, -3)
 
-[node name="Spikes" parent="Spikes" unique_id=1874813182 instance=ExtResource("18_2272n")]
+[node name="Spikes" parent="Spikes" unique_id=1874813182 instance=ExtResource("19_sefh5")]
 position = Vector2(1744, -865)
 
-[node name="Spikes2" parent="Spikes" unique_id=1064747454 instance=ExtResource("18_2272n")]
+[node name="Spikes2" parent="Spikes" unique_id=1064747454 instance=ExtResource("19_sefh5")]
 position = Vector2(3781, -193)
 
-[node name="Spikes3" parent="Spikes" unique_id=1701212800 instance=ExtResource("18_2272n")]
+[node name="Spikes3" parent="Spikes" unique_id=1701212800 instance=ExtResource("19_sefh5")]
 position = Vector2(4064, -186)
 
-[node name="Spikes4" parent="Spikes" unique_id=1591663031 instance=ExtResource("18_2272n")]
+[node name="Spikes4" parent="Spikes" unique_id=1591663031 instance=ExtResource("19_sefh5")]
 position = Vector2(4356, -189)
 
-[node name="Spikes5" parent="Spikes" unique_id=994059839 instance=ExtResource("18_2272n")]
+[node name="Spikes5" parent="Spikes" unique_id=994059839 instance=ExtResource("19_sefh5")]
 position = Vector2(4643, -193)
 
-[node name="Spikes6" parent="Spikes" unique_id=1751093619 instance=ExtResource("18_2272n")]
+[node name="Spikes6" parent="Spikes" unique_id=1751093619 instance=ExtResource("19_sefh5")]
 position = Vector2(4942, -192)
 
-[node name="Spikes7" parent="Spikes" unique_id=372237232 instance=ExtResource("18_2272n")]
+[node name="Spikes7" parent="Spikes" unique_id=372237232 instance=ExtResource("19_sefh5")]
 position = Vector2(9337, -1155)
 
-[node name="Mushroom3" parent="." unique_id=2056630786 instance=ExtResource("20_utqry")]
+[node name="Mushroom3" parent="." unique_id=2056630786 instance=ExtResource("20_jxp73")]
 position = Vector2(4744, -645)
 
-[node name="Mushroom4" parent="." unique_id=111150080 instance=ExtResource("20_utqry")]
+[node name="Mushroom4" parent="." unique_id=111150080 instance=ExtResource("20_jxp73")]
 position = Vector2(8759, 31)
 
-[node name="Mushroom" parent="." unique_id=111424788 instance=ExtResource("20_utqry")]
+[node name="Mushroom" parent="." unique_id=111424788 instance=ExtResource("20_jxp73")]
 position = Vector2(3996.0002, -645)
 
-[node name="Bee" parent="." unique_id=1064858923 instance=ExtResource("21_gaofk")]
+[node name="Bee" parent="." unique_id=1064858923 instance=ExtResource("21_cs31o")]
 position = Vector2(6258, -902)
 
-[node name="Bee2" parent="." unique_id=588582132 instance=ExtResource("21_gaofk")]
+[node name="Bee2" parent="." unique_id=588582132 instance=ExtResource("21_cs31o")]
 position = Vector2(6884, 26)
 
-[node name="Mushroom2" parent="." unique_id=1454684026 instance=ExtResource("20_utqry")]
+[node name="Mushroom2" parent="." unique_id=1454684026 instance=ExtResource("20_jxp73")]
 position = Vector2(12951, -10)
 scale = Vector2(1, 1)
 
-[node name="Bee3" parent="." unique_id=1085305660 instance=ExtResource("21_gaofk")]
+[node name="Bee3" parent="." unique_id=1085305660 instance=ExtResource("21_cs31o")]
 position = Vector2(12986, -1084)
 
-[node name="death_zone" parent="." unique_id=697301524 instance=ExtResource("22_gaofk")]
+[node name="death_zone" parent="." unique_id=697301524 instance=ExtResource("22_p5mv7")]
 position = Vector2(1871, 774)
 
-[node name="death_zone2" parent="." unique_id=1483041067 instance=ExtResource("22_gaofk")]
+[node name="death_zone2" parent="." unique_id=1483041067 instance=ExtResource("22_p5mv7")]
 position = Vector2(2848, 475)
 
-[node name="death_zone3" parent="." unique_id=1020017044 instance=ExtResource("22_gaofk")]
+[node name="death_zone3" parent="." unique_id=1020017044 instance=ExtResource("22_p5mv7")]
 position = Vector2(3662, 475)
 
-[node name="death_zone4" parent="." unique_id=2051203994 instance=ExtResource("22_gaofk")]
+[node name="death_zone4" parent="." unique_id=2051203994 instance=ExtResource("22_p5mv7")]
 position = Vector2(4747, 589)
 
-[node name="death_zone5" parent="." unique_id=1328392137 instance=ExtResource("22_gaofk")]
+[node name="death_zone5" parent="." unique_id=1328392137 instance=ExtResource("22_p5mv7")]
 position = Vector2(6940, 595)
 
-[node name="death_zone6" parent="." unique_id=1158180300 instance=ExtResource("22_gaofk")]
+[node name="death_zone6" parent="." unique_id=1158180300 instance=ExtResource("22_p5mv7")]
 position = Vector2(10803, 425)
 
-[node name="death_zone7" parent="." unique_id=16769574 instance=ExtResource("22_gaofk")]
+[node name="death_zone7" parent="." unique_id=16769574 instance=ExtResource("22_p5mv7")]
 position = Vector2(12002, 425)
 
-[node name="death_zone8" parent="." unique_id=861268538 instance=ExtResource("22_gaofk")]
+[node name="death_zone8" parent="." unique_id=861268538 instance=ExtResource("22_p5mv7")]
 position = Vector2(13223, 432)

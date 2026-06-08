@@ -2,7 +2,7 @@ extends Node
 
 signal pineapple_changed(value)
 var pineapples = 0
-var level = 2
+var level = 1
 
 func reset_pineapples() -> void:
 	pineapples = 0
