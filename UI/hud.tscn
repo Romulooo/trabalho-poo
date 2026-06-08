@@ -2,7 +2,76 @@
 
 [ext_resource type="Script" uid="uid://dnkyp3q8yl6f0" path="res://UI/hud.gd" id="1_ne75i"]
 [ext_resource type="Texture2D" uid="uid://dn8tsekxaftue" path="res://Sprites/Fruits/Kiwi.png" id="2_2o5uh"]
+[ext_resource type="Texture2D" uid="uid://clj2sl4qfhhu2" path="res://Sprites/Fruits/Cherries.png" id="2_b1lf8"]
 [ext_resource type="Texture2D" uid="uid://t1cio70lcob4" path="res://Sprites/Fruits/Pineapple.png" id="2_bytes"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hjmqc"]
+atlas = ExtResource("2_b1lf8")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2pa52"]
+atlas = ExtResource("2_b1lf8")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xiih7"]
+atlas = ExtResource("2_b1lf8")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0mm64"]
+atlas = ExtResource("2_b1lf8")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x8e40"]
+atlas = ExtResource("2_b1lf8")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lgfjo"]
+atlas = ExtResource("2_b1lf8")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_87l0j"]
+atlas = ExtResource("2_b1lf8")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sf3w6"]
+atlas = ExtResource("2_b1lf8")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lgp2o"]
+atlas = ExtResource("2_b1lf8")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2hq1a"]
+atlas = ExtResource("2_b1lf8")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ux32p"]
+atlas = ExtResource("2_b1lf8")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xq1n4"]
+atlas = ExtResource("2_b1lf8")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_deovh"]
+atlas = ExtResource("2_b1lf8")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u1myy"]
+atlas = ExtResource("2_b1lf8")
+region = Rect2(416, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sd3id"]
+atlas = ExtResource("2_b1lf8")
+region = Rect2(448, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ofhis"]
+atlas = ExtResource("2_b1lf8")
+region = Rect2(480, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ccp0a"]
+atlas = ExtResource("2_b1lf8")
+region = Rect2(512, 0, 32, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mwyay"]
 atlas = ExtResource("2_2o5uh")
@@ -144,6 +213,62 @@ region = Rect2(512, 0, 32, 32)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_hjmqc")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2pa52")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xiih7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0mm64")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x8e40")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lgfjo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_87l0j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sf3w6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lgp2o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2hq1a")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ux32p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xq1n4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_deovh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u1myy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sd3id")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ofhis")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ccp0a")
+}],
+"loop": true,
+"name": &"idleCherry",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_mwyay")
 }, {
 "duration": 1.0,
@@ -267,7 +392,7 @@ script = ExtResource("1_ne75i")
 position = Vector2(61.999996, 61)
 scale = Vector2(2.1953125, 2.1953125)
 sprite_frames = SubResource("SpriteFrames_hjmqc")
-animation = &"idleKiwi"
+animation = &"idleCherry"
 autoplay = "idlePineapple"
 
 [node name="Fruits" type="Label" parent="." unique_id=793311786]

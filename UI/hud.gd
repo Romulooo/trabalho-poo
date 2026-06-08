@@ -7,6 +7,7 @@ func fruit_text(new_value):
 func _ready() -> void:
 	GameManager.pineapple_changed.connect(fruit_text)
 	fruit_text(GameManager.pineapples)
+	
 
 func get_visibility() -> void:
 	await get_tree().process_frame 
@@ -21,7 +22,7 @@ func get_visibility() -> void:
 		visible = true
 		$AnimatedSprite2D.play("idleKiwi")
 	elif scene == "Level3":
-		visible = false
-		$AnimatedSprite2D.play("idleKiwi")
+		visible = true
+		$AnimatedSprite2D.play("idleCherry")
 	else:
 		visible = false

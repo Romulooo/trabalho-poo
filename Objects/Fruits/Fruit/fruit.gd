@@ -7,6 +7,9 @@ func _ready() -> void:
 		$AnimatedSprite2D.play("idlePineapple")
 	elif get_tree().current_scene.name == "Level2":
 		$AnimatedSprite2D.play("idleKiwi")
+	elif get_tree().current_scene.name == "Level3":
+		$AnimatedSprite2D.play("idleCherry")
+
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "Player" or body.name == "Player2":
