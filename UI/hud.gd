@@ -1,6 +1,7 @@
 extends CanvasLayer
 
 
+
 func fruit_text(new_value):
 	$Fruits.text = "x%d" % new_value
 	
@@ -13,6 +14,7 @@ func get_visibility() -> void:
 	await get_tree().process_frame 
 	
 	var scene = get_tree().current_scene.name
+	
 	
 	if scene == "Level1":
 		visible = true

@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://b1yaopeba6nqc" path="res://Enemies/Bee/bee.tscn" id="21_cs31o"]
 [ext_resource type="PackedScene" uid="uid://c6kcet8ykna1k" path="res://Objects/death_zone.tscn" id="22_p5mv7"]
 [ext_resource type="PackedScene" uid="uid://cj0avur8pv6bd" path="res://Objects/Fruits/Fruit/fruit.tscn" id="24_6gg2j"]
+[ext_resource type="PackedScene" uid="uid://bis0clultfav7" path="res://Objects/Flag/flag.tscn" id="25_i5kxt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kgaxw"]
 texture = ExtResource("4_i5kxt")
@@ -446,7 +447,7 @@ layer_1/tile_data = PackedInt32Array(-655373, 4, 0, -589837, 4, 1, -524301, 4, 2
 scale = Vector2(6, 6)
 tile_set = SubResource("TileSet_5hmwf")
 format = 2
-layer_0/tile_data = PackedInt32Array(262151, 1, 0, 262154, 6, 0, 23, 6, 0, -131066, 5, 0, -196597, 6, 0, -589835, 5, 0, -589827, 5, 0, -196604, 5, 0, -458707, 6, 0, -458698, 6, 0, -458693, 5, 0, -262078, 5, 0, 70, 5, 0, -130939, 4, 0, -130929, 4, 0, -196548, 4, 0, -131033, 4, 0, -131032, 4, 0, -131031, 4, 0, -131020, 4, 0, -131021, 4, 0, 65546, 4, 0, 65545, 4, 0, 65544, 4, 0, 65543, 4, 0, -131075, 4, 0, -458709, 6, 0, 33, 6, 0, 84, 6, 0, 96, 6, 0, 79, 6, 0, -458639, 6, 0, -65399, 6, 0, -65393, 6, 0, -65404, 5, 0, -458619, 5, 0, -458612, 6, 0, -458596, 2, 0, -458599, 6, 0)
+layer_0/tile_data = PackedInt32Array(262151, 1, 0, 262154, 6, 0, 23, 6, 0, -131066, 5, 0, -196597, 6, 0, -589835, 5, 0, -589827, 5, 0, -196604, 5, 0, -458707, 6, 0, -458698, 6, 0, -458693, 5, 0, -262078, 5, 0, 70, 5, 0, -130939, 4, 0, -130929, 4, 0, -196548, 4, 0, -131033, 4, 0, -131032, 4, 0, -131031, 4, 0, -131020, 4, 0, -131021, 4, 0, 65546, 4, 0, 65545, 4, 0, 65544, 4, 0, 65543, 4, 0, -131075, 4, 0, -458709, 6, 0, 33, 6, 0, 84, 6, 0, 96, 6, 0, 79, 6, 0, -458639, 6, 0, -65399, 6, 0, -65393, 6, 0, -65404, 5, 0, -458619, 5, 0, -458612, 6, 0, -458599, 6, 0)
 
 [node name="falling_platform" parent="." unique_id=1562064965 instance=ExtResource("17_gy6ml")]
 position = Vector2(1523, -336)
@@ -559,3 +560,6 @@ position = Vector2(13223, 432)
 
 [node name="Fruit" parent="." unique_id=665623808 instance=ExtResource("24_6gg2j")]
 position = Vector2(1520, 200)
+
+[node name="Flag" parent="." unique_id=807215847 instance=ExtResource("25_i5kxt")]
+position = Vector2(15139, -736)

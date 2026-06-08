@@ -466,6 +466,7 @@ expand_mode = 1
 
 [node name="Label" type="Label" parent="GridContainer/ButtonLevel1/VBoxContainer" unique_id=610143203]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("5_rsvb7")
 theme_override_font_sizes/font_size = 20
 text = "Nível 1"
@@ -509,6 +510,7 @@ expand_mode = 1
 
 [node name="Label" type="Label" parent="GridContainer/ButtonLevel2/VBoxContainer" unique_id=379839227]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("5_rsvb7")
 theme_override_font_sizes/font_size = 20
 text = "Nível 2"
@@ -552,6 +554,7 @@ expand_mode = 1
 
 [node name="Label" type="Label" parent="GridContainer/ButtonLevel3/VBoxContainer" unique_id=1798478261]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("5_rsvb7")
 theme_override_font_sizes/font_size = 20
 text = "Nível 3"

@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://deqrdg0c5736t" path="res://Sprites/Terrain/Decoration/flowers_props.png" id="14_ggudo"]
 [ext_resource type="Texture2D" uid="uid://mdxchtvtryhm" path="res://Sprites/Terrain/Decoration/grass_props.png" id="15_y2jff"]
 [ext_resource type="PackedScene" uid="uid://c6kcet8ykna1k" path="res://Objects/death_zone.tscn" id="22_f8ci1"]
+[ext_resource type="PackedScene" uid="uid://bis0clultfav7" path="res://Objects/Flag/flag.tscn" id="24_plkcr"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qulpo"]
 texture = ExtResource("4_8i3m3")
@@ -735,3 +736,6 @@ scale = Vector2(6, 6)
 tile_set = SubResource("TileSet_uhfm4")
 format = 2
 layer_0/tile_data = PackedInt32Array(262152, 6, 0, 262167, 5, 0, 196655, 4, 0, 196665, 4, 0, 262194, 5, 0, 55, 6, 0, 327713, 1, 0, 65687, 1, 0, -65407, 4, 0, -262026, 4, 0, -589702, 4, 0, -261990, 4, 0, 65690, 5, 0, -458623, 5, 0, -130961, 5, 0, 65630, 5, 0, 65655, 6, 0, -786313, 6, 0, -524133, 6, 0, 65704, 4, 0, -196438, 6, 0, 458857, 1, 0, -196436, 2, 0, 393340, 4, 0, 393328, 4, 0, 327785, 4, 0, 458878, 3, 0, 458858, 3, 0, 262182, 6, 0, -917384, 0, 0, 131071, 2, 0, 65533, 4, 0, -262037, 0, 0)
+
+[node name="Flag" parent="." unique_id=807215847 instance=ExtResource("24_plkcr")]
+position = Vector2(16260.001, -351.00003)
