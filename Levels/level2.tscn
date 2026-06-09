@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://bj07t52xcgfpa" path="res://Sprites/Background/Yellow.png" id="7_jifot"]
 [ext_resource type="Texture2D" uid="uid://brqf5255ueo05" path="res://Sprites/Terrain/Decoration/arrow_plate_left.png" id="8_2x2vu"]
 [ext_resource type="PackedScene" uid="uid://cjcjffeovs6es" path="res://Objects/FallingPlatform/falling_platform.tscn" id="8_rmy57"]
+[ext_resource type="PackedScene" uid="uid://bd6ubblu3m46a" path="res://Enemies/BrickHead/brick_head.tscn" id="8_ucg3d"]
 [ext_resource type="PackedScene" uid="uid://dn34a2n5ad44a" path="res://Objects/Spike/spikes.tscn" id="9_dc5vx"]
 [ext_resource type="Texture2D" uid="uid://cdsluilthgkdk" path="res://Sprites/Terrain/Decoration/arrow_plate_right.png" id="9_f8ci1"]
 [ext_resource type="Texture2D" uid="uid://cqgl1ydcqimmx" path="res://Sprites/Terrain/Decoration/wooden_plate.png" id="10_iakae"]
@@ -447,6 +448,12 @@ position = Vector2(10840, -1920)
 
 [node name="Bee3" parent="Enemies" unique_id=1731560065 instance=ExtResource("12_r8rrl")]
 position = Vector2(9604, -1026)
+
+[node name="brick_head" parent="Enemies" unique_id=1780150587 instance=ExtResource("8_ucg3d")]
+position = Vector2(7540.0005, -1000.00006)
+
+[node name="brick_head2" parent="Enemies" unique_id=1418686750 instance=ExtResource("8_ucg3d")]
+position = Vector2(15960, -1080)
 
 [node name="Spikes" type="Node" parent="." unique_id=1364021690]
 

@@ -24,6 +24,7 @@
 [ext_resource type="Texture2D" uid="uid://bgrw60g8b1hel" path="res://Sprites/Terrain/Decoration/roots_props.png" id="16_ycv2e"]
 [ext_resource type="Texture2D" uid="uid://mdxchtvtryhm" path="res://Sprites/Terrain/Decoration/grass_props.png" id="17_8652m"]
 [ext_resource type="PackedScene" uid="uid://bis0clultfav7" path="res://Objects/Flag/flag.tscn" id="24_1ej3e"]
+[ext_resource type="PackedScene" uid="uid://bd6ubblu3m46a" path="res://Enemies/BrickHead/brick_head.tscn" id="25_xsckx"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_uuy0h"]
 texture = ExtResource("10_7nyxr")
@@ -508,6 +509,9 @@ position = Vector2(10315, 425)
 
 [node name="Bee3" parent="Enemies" unique_id=1233597041 instance=ExtResource("3_nauge")]
 position = Vector2(17420, -60)
+
+[node name="brick_head" parent="Enemies" unique_id=1780150587 instance=ExtResource("25_xsckx")]
+position = Vector2(15700, -900)
 
 [node name="Trampolines" type="Node" parent="." unique_id=1799360598]
 
