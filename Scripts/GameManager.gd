@@ -3,6 +3,7 @@ extends Node
 signal pineapple_changed(value)
 var pineapples = 0
 var level = 1
+var single_player: bool = false
 
 func reset_pineapples() -> void:
 	pineapples = 0

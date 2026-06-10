@@ -18,6 +18,7 @@ func _physics_process(delta: float) -> void:
 		global_position.y = start_position
 		velocity.y = 0
 	elif state == states.falling:
+		$DamageArea2D/CollisionShape2D.disabled = false
 		velocity.y = 1000
 		move_and_slide()
 		if is_on_floor():
@@ -26,6 +27,7 @@ func _physics_process(delta: float) -> void:
 			$AnimatedSprite2D.play("idle")
 			state = states.rising
 	elif state == states.rising:
+		$DamageArea2D/CollisionShape2D.disabled = true
 		velocity.y = -150
 		move_and_slide()
 		if global_position.y <= start_position:

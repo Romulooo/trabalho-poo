@@ -9,6 +9,10 @@ var coyote_time: float = 0.1
 var jump_buffer_counter: float = 0.0
 var coyote_counter: float = 0.0
 
+func _ready() -> void:
+	if GameManager.single_player:
+		queue_free()
+
 func p2_damage() -> void:
 	health = 0
 	$AnimatedSprite2D.play("hurt")

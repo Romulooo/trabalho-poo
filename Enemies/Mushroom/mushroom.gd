@@ -7,7 +7,7 @@ var is_dead = false
 
 var is_bouncing = false
 
-var color: int = randi_range(1, 3)
+var color: int = randi_range(1, 4)
 
 func _physics_process(delta: float) -> void:
 	if not is_on_floor():
@@ -25,6 +25,8 @@ func _physics_process(delta: float) -> void:
 			$AnimatedSprite2D.play("idlePurple")
 		elif color == 3:
 			$AnimatedSprite2D.play("idleYellow")
+		elif color == 4:
+			$AnimatedSprite2D.play("idleBlue")
 		
 		if not is_bouncing:
 			if direction:
@@ -42,6 +44,8 @@ func _physics_process(delta: float) -> void:
 			$AnimatedSprite2D.play("attackPurple")
 		elif color == 3:
 			$AnimatedSprite2D.play("attackYellow")
+		elif color == 4:
+			$AnimatedSprite2D.play("attackBlue")
 		velocity.x = 0
 	elif is_dead:
 		if color == 1:
@@ -50,6 +54,8 @@ func _physics_process(delta: float) -> void:
 			$AnimatedSprite2D.play("deathPurple")
 		elif color == 3:
 			$AnimatedSprite2D.play("deathYellow")
+		elif color == 4:
+			$AnimatedSprite2D.play("deathBlue")
 		velocity.x = 0
 		
 	move_and_slide()

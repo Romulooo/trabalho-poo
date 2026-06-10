@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cu62c0d3fy1un"]
+
+[ext_resource type="Script" uid="uid://tey1xkhlhd64" path="res://Objects/HelpBox/help_box.gd" id="1_1dedl"]
+[ext_resource type="Texture2D" uid="uid://cjqow4jbqydv1" path="res://Sprites/Boxes/Box.png" id="1_fwb6q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1dedl"]
+
+[node name="help_box" type="StaticBody2D" unique_id=819499801]
+scale = Vector2(6, 6)
+collision_layer = 7
+collision_mask = 7
+script = ExtResource("1_1dedl")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=336290617]
+texture = ExtResource("1_fwb6q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1100082050]
+shape = SubResource("RectangleShape2D_1dedl")

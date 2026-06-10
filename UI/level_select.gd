@@ -1,6 +1,6 @@
 extends Control
 
-
+@onready var check_button: CheckButton = $CheckButton
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -11,6 +11,8 @@ func _ready() -> void:
 	elif GameManager.level == 2:
 		$GridContainer/ButtonLevel3.modulate = Color(0.507, 0.507, 0.507, 1.0)
 	
+	if check_button:
+		check_button.button_pressed = GameManager.single_player
 
 func _on_back_pressed() -> void:
 	get_tree().change_scene_to_file("res://UI/main_menu.tscn")
@@ -60,3 +62,7 @@ func _on_button_level_3_mouse_entered() -> void:
 func _on_button_level_3_mouse_exited() -> void:
 	if GameManager.level >= 3:
 		$GridContainer/ButtonLevel2.modulate = Color(1.0, 1.0, 1.0)
+
+
+func _on_check_button_toggled(toggled_on: bool) -> void:
+	GameManager.single_player = toggled_on

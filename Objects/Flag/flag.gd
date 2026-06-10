@@ -3,7 +3,7 @@ extends Area2D
 var win = false
 
 func _on_body_entered(body: Node2D) -> void:
-	if body.name == "Player" or body.name == "Player2" and not win:
+	if body.name == "Player" and not win or body.name == "Player2" and not win:
 		$AnimatedSprite2D.play("complete")
 		
 		win = true
