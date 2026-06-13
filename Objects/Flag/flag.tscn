@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://buahht2trpqka" path="res://Objects/Flag/flag.gd" id="1_mt7v1"]
 [ext_resource type="Texture2D" uid="uid://be45fprp0nwyc" path="res://Sprites/Flag/Checkpoint (Flag Idle)(64x64).png" id="2_mt7v1"]
 [ext_resource type="Texture2D" uid="uid://c4iul5gfp446a" path="res://Sprites/Flag/Checkpoint (No Flag).png" id="3_g22i0"]
+[ext_resource type="AudioStream" uid="uid://cja5hnvpc7a2u" path="res://Audio/power_up.wav" id="5_g22i0"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l2xo7"]
 size = Vector2(17, 46)
@@ -381,5 +382,9 @@ animation = &"complete"
 autoplay = "idle"
 frame = 65
 frame_progress = 1.0
+
+[node name="WinSound" type="AudioStreamPlayer2D" parent="." unique_id=1503684971]
+stream = ExtResource("5_g22i0")
+pitch_scale = 0.75
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

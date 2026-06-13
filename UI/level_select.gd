@@ -61,7 +61,7 @@ func _on_button_level_3_mouse_entered() -> void:
 
 func _on_button_level_3_mouse_exited() -> void:
 	if GameManager.level >= 3:
-		$GridContainer/ButtonLevel2.modulate = Color(1.0, 1.0, 1.0)
+		$GridContainer/ButtonLevel3.modulate = Color(1.0, 1.0, 1.0)
 
 
 func _on_check_button_toggled(toggled_on: bool) -> void:

@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dn8tsekxaftue" path="res://Sprites/Fruits/Kiwi.png" id="2_2o5uh"]
 [ext_resource type="Texture2D" uid="uid://clj2sl4qfhhu2" path="res://Sprites/Fruits/Cherries.png" id="2_b1lf8"]
 [ext_resource type="Texture2D" uid="uid://t1cio70lcob4" path="res://Sprites/Fruits/Pineapple.png" id="2_bytes"]
+[ext_resource type="FontFile" uid="uid://ffxdr40ylyvi" path="res://UI/PixelifySans-VariableFont_wght.ttf" id="5_rnl6m"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hjmqc"]
 atlas = ExtResource("2_b1lf8")
@@ -381,6 +382,7 @@ animations = [{
 }]
 
 [sub_resource type="LabelSettings" id="LabelSettings_ne75i"]
+font = ExtResource("5_rnl6m")
 font_size = 32
 shadow_size = 8
 shadow_color = Color(0, 0, 0, 0.42352942)
@@ -396,10 +398,10 @@ animation = &"idleCherry"
 autoplay = "idlePineapple"
 
 [node name="Fruits" type="Label" parent="." unique_id=793311786]
-offset_left = 80.0
-offset_top = 40.0
-offset_right = 160.0
-offset_bottom = 85.0
+offset_left = 83.0
+offset_top = 41.0
+offset_right = 163.0
+offset_bottom = 86.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)

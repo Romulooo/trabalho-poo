@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://ubv071yabrlv" path="res://Enemies/Bee/bee.gd" id="1_32k1d"]
 [ext_resource type="Texture2D" uid="uid://du5xpptc7udoe" path="res://Sprites/Enemies/Bee.png" id="1_qs5k8"]
 [ext_resource type="Texture2D" uid="uid://wb83t0l6ybpa" path="res://Sprites/Fruits/Collected.png" id="3_dviih"]
+[ext_resource type="AudioStream" uid="uid://dsxmsfp3h2yt8" path="res://Audio/ia.wav" id="4_cru8v"]
+[ext_resource type="AudioStream" uid="uid://d2ndtmwxrjtnq" path="res://Audio/abeia.wav" id="5_cm2cf"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4d484"]
 atlas = ExtResource("1_qs5k8")
@@ -199,6 +201,13 @@ collision_mask = 7
 [node name="HeadCollisionShape2D" type="CollisionShape2D" parent="Head" unique_id=1853619845]
 position = Vector2(0, -27)
 shape = SubResource("RectangleShape2D_tvgoh")
+
+[node name="DeathSound" type="AudioStreamPlayer2D" parent="." unique_id=273155298]
+stream = ExtResource("4_cru8v")
+
+[node name="KillSound" type="AudioStreamPlayer2D" parent="." unique_id=965547171]
+stream = ExtResource("5_cm2cf")
+pitch_scale = 1.2
 
 [connection signal="body_entered" from="DetectionArea" to="." method="_on_detection_area_body_entered"]
 [connection signal="body_exited" from="DetectionArea" to="." method="_on_detection_area_body_exited"]

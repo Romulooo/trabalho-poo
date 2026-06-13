@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://cigih7uq2lqns" path="res://Sprites/Trampoline/Idle.png" id="1_mje6d"]
 [ext_resource type="Script" uid="uid://p1s8e477lm75" path="res://Objects/Trampoline/trampoline.gd" id="1_xfyy4"]
 [ext_resource type="Texture2D" uid="uid://bggiosajbhekb" path="res://Sprites/Trampoline/Jump (28x28).png" id="2_xfyy4"]
+[ext_resource type="AudioStream" uid="uid://b0s1liin4dw1h" path="res://Audio/jump.wav" id="4_7pm5j"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cmuc3"]
 atlas = ExtResource("2_xfyy4")
@@ -94,6 +95,10 @@ frame_progress = 0.7790626
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=401675443]
 position = Vector2(-3, 33)
 shape = SubResource("RectangleShape2D_xfyy4")
+
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="." unique_id=1474995601]
+stream = ExtResource("4_7pm5j")
+pitch_scale = 0.55
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]

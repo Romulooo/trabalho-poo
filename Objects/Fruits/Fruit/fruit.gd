@@ -13,6 +13,7 @@ func _ready() -> void:
 
 func _on_body_entered(body: Node2D) -> void:
 	if body.name == "Player" or body.name == "Player2":
+		
 		GameManager.collect_pineapple()
 		spawn_efeito()
 		queue_free()

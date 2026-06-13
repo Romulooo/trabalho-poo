@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://wb83t0l6ybpa" path="res://Sprites/Fruits/Collected.png" id="1_1p7ln"]
 [ext_resource type="Script" uid="uid://3x1pisnclrvi" path="res://Objects/Fruits/fruit_collect_effect.gd" id="2_78fbu"]
+[ext_resource type="AudioStream" uid="uid://bbfvrh425m47m" path="res://Audio/coin.wav" id="3_yudtj"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8a0mk"]
 atlas = ExtResource("1_1p7ln")
@@ -61,5 +62,9 @@ autoplay = "idle"
 frame = 2
 frame_progress = 0.105063535
 script = ExtResource("2_78fbu")
+
+[node name="CollectSound" type="AudioStreamPlayer2D" parent="." unique_id=333315340]
+stream = ExtResource("3_yudtj")
+pitch_scale = 0.8
 
 [connection signal="animation_finished" from="." to="." method="_on_animation_finished"]

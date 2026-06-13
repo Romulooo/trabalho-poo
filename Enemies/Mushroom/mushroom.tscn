@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://wb83t0l6ybpa" path="res://Sprites/Fruits/Collected.png" id="3_2obgq"]
 [ext_resource type="Texture2D" uid="uid://yhvd2lincjvq" path="res://Sprites/Enemies/Mushroom_3.png" id="4_v3oa7"]
 [ext_resource type="Texture2D" uid="uid://b06eeqojcwpyc" path="res://Sprites/Enemies/Mushroom_2.png" id="5_uo0yw"]
+[ext_resource type="AudioStream" uid="uid://dsxmsfp3h2yt8" path="res://Audio/ia.wav" id="7_jl50x"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ondgk"]
 atlas = ExtResource("2_8d1yy")
@@ -517,6 +518,9 @@ script = SubResource("GDScript_wr0a8")
 [node name="HeadCollisionShape2D" type="CollisionShape2D" parent="Head" unique_id=1223597399]
 position = Vector2(-0.083333254, -2.0000005)
 shape = SubResource("RectangleShape2D_wr0a8")
+
+[node name="DeathSound" type="AudioStreamPlayer2D" parent="." unique_id=237003967]
+stream = ExtResource("7_jl50x")
 
 [connection signal="body_entered" from="Body" to="." method="_on_body_body_entered"]
 [connection signal="body_entered" from="Head" to="." method="_on_head_body_entered"]

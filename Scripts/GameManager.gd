@@ -4,6 +4,7 @@ signal pineapple_changed(value)
 var pineapples = 0
 var level = 1
 var single_player: bool = false
+var has_lost = false
 
 func reset_pineapples() -> void:
 	pineapples = 0
@@ -14,22 +15,25 @@ func collect_pineapple() -> void:
 	pineapple_changed.emit(pineapples)
 
 func game_over() -> void:
-	Engine.time_scale = 0.3
-	reset_pineapples()
-	
-	await get_tree().create_timer(2.0, true, false, true).timeout 
-	
-	await Transition.fade_in(0.5)
-	Engine.time_scale = 1.0
-	
-	
-	get_tree().reload_current_scene()
-	await Transition.fade_out(0.5)
-	
+	if not has_lost:
+		has_lost = true
+		Engine.time_scale = 0.3
+
+		
+		await get_tree().create_timer(2.0, true, false, true).timeout 
+		
+		await Transition.fade_in(0.5)
+		Engine.time_scale = 1.0
+		
+		reset_pineapples()
+		get_tree().reload_current_scene()
+		await Transition.fade_out(0.5)
+		has_lost = false
+		
 func next_level() -> void:
 	await get_tree().create_timer(2.0, true, false, true).timeout
 	await Transition.fade_in(0.5)
-	
+	reset_pineapples()
 	if level == 1:
 		level = 2
 		get_tree().change_scene_to_file("res://Levels/level2.tscn")

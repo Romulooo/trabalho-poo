@@ -5,6 +5,7 @@ extends Area2D
 func _on_body_entered(body: Node2D) -> void:
 	if "velocity" in body:
 		body.velocity.y = forca_impulso
+		$JumpSound.play()
 		if body.name == "Mushroom" or "Mushroom" in body.name:
 			body.is_bouncing = true
 

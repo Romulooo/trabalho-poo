@@ -14,6 +14,7 @@ func _ready() -> void:
 		queue_free()
 
 func p2_damage() -> void:
+	$HurtSound.play()
 	health = 0
 	$AnimatedSprite2D.play("hurt")
 	GameManager.game_over()
@@ -34,6 +35,7 @@ func _physics_process(delta: float) -> void:
 	
 	if health > 0:
 		if jump_buffer_counter > 0.0 and coyote_counter > 0.0 and is_on_floor():
+			$JumpSound.play()
 			velocity.y = JUMP_VELOCITY
 
 		var direction := Input.get_axis("p2left", "p2right")

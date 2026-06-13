@@ -26,6 +26,8 @@
 [ext_resource type="PackedScene" uid="uid://c6kcet8ykna1k" path="res://Objects/death_zone.tscn" id="22_f8ci1"]
 [ext_resource type="PackedScene" uid="uid://bis0clultfav7" path="res://Objects/Flag/flag.tscn" id="24_plkcr"]
 [ext_resource type="PackedScene" uid="uid://cu62c0d3fy1un" path="res://Objects/HelpBox/help_box.tscn" id="26_fn86y"]
+[ext_resource type="PackedScene" uid="uid://3n08qger5dot" path="res://UI/pause_menu.tscn" id="27_hhhfn"]
+[ext_resource type="PackedScene" uid="uid://ct1dom6brae52" path="res://Objects/Start/start.tscn" id="27_wqun2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qulpo"]
 texture = ExtResource("4_8i3m3")
@@ -411,10 +413,10 @@ player2 = NodePath("../Player2")
 
 [node name="Player" parent="." unique_id=1316077864 instance=ExtResource("2_rmy57")]
 z_index = 1
-position = Vector2(640, 420)
+position = Vector2(574.825, 424.96)
 
 [node name="Player2" parent="." unique_id=1626768893 instance=ExtResource("3_qulpo")]
-position = Vector2(440, 420)
+position = Vector2(440.45, 425.005)
 
 [node name="FallingPlatforms" type="Node" parent="." unique_id=2002883090]
 
@@ -729,6 +731,14 @@ position = Vector2(3460, 865)
 [node name="death_zone4" parent="DeathZones" unique_id=699692719 instance=ExtResource("22_f8ci1")]
 position = Vector2(9901, 1099)
 
+[node name="HelpBoxes" type="Node" parent="." unique_id=1389667534]
+
+[node name="help_box" parent="HelpBoxes" unique_id=819499801 instance=ExtResource("26_fn86y")]
+position = Vector2(180, 421)
+
+[node name="help_box2" parent="HelpBoxes" unique_id=816077998 instance=ExtResource("26_fn86y")]
+position = Vector2(10764, -155)
+
 [node name="TileMap" type="TileMap" parent="." unique_id=2077514454]
 position = Vector2(4, 1)
 scale = Vector2(6, 6)
@@ -748,8 +758,7 @@ layer_0/tile_data = PackedInt32Array(262152, 6, 0, 262167, 5, 0, 196655, 4, 0, 1
 [node name="Flag" parent="." unique_id=807215847 instance=ExtResource("24_plkcr")]
 position = Vector2(16260.001, -351.00003)
 
-[node name="help_box" parent="." unique_id=819499801 instance=ExtResource("26_fn86y")]
-position = Vector2(180, 421)
+[node name="Start" parent="." unique_id=924514488 instance=ExtResource("27_wqun2")]
+position = Vector2(445, 290)
 
-[node name="help_box2" parent="." unique_id=816077998 instance=ExtResource("26_fn86y")]
-position = Vector2(10764, -155)
+[node name="pause_menu" parent="." unique_id=1875894741 instance=ExtResource("27_hhhfn")]

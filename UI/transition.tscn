@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cbdkqjqxmcka2" path="res://UI/transition.gd" id="1_inf52"]
 
 [node name="Transition" type="CanvasLayer" unique_id=1464364513]
+layer = 5
 script = ExtResource("1_inf52")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1250869033]

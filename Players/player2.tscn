@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" uid="uid://dveq7rligfj8j" path="res://Players/BasicMovementP2.gd" id="1_axnn4"]
 [ext_resource type="Texture2D" uid="uid://c3onxlgmiyhjh" path="res://Sprites/Players/RedDino.png" id="3_bn6h6"]
+[ext_resource type="AudioStream" uid="uid://bfl7q0og2k76f" path="res://Audio/maico.wav" id="3_ypfw4"]
+[ext_resource type="AudioStream" uid="uid://bdmaogy75hs3d" path="res://Audio/hurt.wav" id="4_ypfw4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4ntmi"]
 size = Vector2(78, 102)
@@ -178,3 +180,9 @@ sprite_frames = SubResource("SpriteFrames_sm0op")
 animation = &"hurt"
 autoplay = "idle"
 frame_progress = 0.28030342
+
+[node name="JumpSound" type="AudioStreamPlayer2D" parent="." unique_id=1733444981]
+stream = ExtResource("3_ypfw4")
+
+[node name="HurtSound" type="AudioStreamPlayer2D" parent="." unique_id=1329844044]
+stream = ExtResource("4_ypfw4")

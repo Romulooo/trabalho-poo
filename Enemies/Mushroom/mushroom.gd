@@ -73,8 +73,10 @@ func _on_head_body_entered(body: Node2D) -> void:
 		if body.velocity.y > 0:
 			if not is_dead:
 				body.velocity.y = -400
+				$DeathSound.play()
 			is_dead = true
 			velocity.x = 0
+			
 			await get_tree().create_timer(0.6, true, false, true).timeout 
 			queue_free()
 		

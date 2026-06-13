@@ -45,15 +45,14 @@ func _physics_process(delta: float) -> void:
 			$AnimatedSprite2D.play("idle")
 			velocity = Vector2.ZERO
 	
-	
-
-
 func _on_sting_area_2d_body_entered(body: Node2D) -> void:
 	if not is_dead:
 		if body.name == "Player":
 			body.p1_damage()
+			$KillSound.play()
 		elif body.name == "Player2":
 			body.p2_damage()
+			$KillSound.play()
 			
 func _on_head_body_entered(body: Node2D) -> void:
 	if body.name == "Player" or body.name == "Player2":
@@ -61,6 +60,7 @@ func _on_head_body_entered(body: Node2D) -> void:
 			if not is_dead:
 				body.velocity.y = -400
 			is_dead = true
+			$DeathSound.play()
 			$AnimatedSprite2D.play("death")
 			
 			velocity.x = 0

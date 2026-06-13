@@ -4,6 +4,8 @@ var start_position
 enum states {waiting, falling, rising}
 var state = states.waiting
 
+var onGround = false
+
 func _ready() -> void:
 	start_position = global_position.y
 
@@ -22,19 +24,20 @@ func _physics_process(delta: float) -> void:
 		velocity.y = 1000
 		move_and_slide()
 		if is_on_floor():
+			if not onGround:
+				$HitSound.play()
+				onGround = true
 			$AnimatedSprite2D.play("hit")
 			await get_tree().create_timer(0.4, true, false, true).timeout 
 			$AnimatedSprite2D.play("idle")
 			state = states.rising
+			onGround = false
 	elif state == states.rising:
 		$DamageArea2D/CollisionShape2D.disabled = true
 		velocity.y = -150
 		move_and_slide()
 		if global_position.y <= start_position:
 			state = states.waiting	
-	
-	
-
 
 func _on_damage_area_2d_body_entered(body: Node2D) -> void:
 	if body.name == "Player":
