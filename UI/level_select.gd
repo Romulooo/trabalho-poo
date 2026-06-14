@@ -2,8 +2,11 @@ extends Control
 
 @onready var check_button: CheckButton = $CheckButton
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	$GridContainer/ButtonLevel1/VBoxContainer/HBoxContainer/LabelPineapple.text = str(GameManager.max_pineapples)+" / 26"
+	$GridContainer/ButtonLevel2/VBoxContainer/HBoxContainer/LabelKiwi.text = str(GameManager.max_kiwis)+" / 26"
+	$GridContainer/ButtonLevel3/VBoxContainer/HBoxContainer/LabelCherry.text = str(GameManager.max_cherries)+" / 10"
+
 	Hud.get_visibility()
 	if GameManager.level == 1:
 		$GridContainer/ButtonLevel2.modulate = Color(0.507, 0.507, 0.507, 1.0)
@@ -16,8 +19,6 @@ func _ready() -> void:
 
 func _on_back_pressed() -> void:
 	get_tree().change_scene_to_file("res://UI/main_menu.tscn")
-
-
 
 func _on_button_level_1_pressed() -> void:
 	await Transition.fade_in(0.5)

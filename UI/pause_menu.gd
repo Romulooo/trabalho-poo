@@ -21,4 +21,5 @@ func _on_button_menu_pressed() -> void:
 	get_tree().paused = false
 	await Transition.fade_in(0.5)
 	get_tree().change_scene_to_file("res://UI/level_select.tscn")
+	GameManager.reset_fruits()
 	await Transition.fade_out(0.5)

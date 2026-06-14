@@ -554,8 +554,28 @@ scale = Vector2(2, 1)
 [node name="death_zone8" parent="." unique_id=861268538 instance=ExtResource("22_p5mv7")]
 position = Vector2(16020, -400)
 
-[node name="Fruit" parent="." unique_id=665623808 instance=ExtResource("24_6gg2j")]
-position = Vector2(1520, 200)
+[node name="Fruits" type="Node" parent="." unique_id=1547347452]
+
+[node name="Fruit" parent="Fruits" unique_id=665623808 instance=ExtResource("24_6gg2j")]
+position = Vector2(1500, 360)
+
+[node name="Fruit2" parent="Fruits" unique_id=1436146275 instance=ExtResource("24_6gg2j")]
+position = Vector2(400, -340)
+
+[node name="Fruit3" parent="Fruits" unique_id=63404346 instance=ExtResource("24_6gg2j")]
+position = Vector2(1080, -440)
+
+[node name="Fruit4" parent="Fruits" unique_id=1077282896 instance=ExtResource("24_6gg2j")]
+position = Vector2(3700, -61)
+
+[node name="Fruit5" parent="Fruits" unique_id=1017723423 instance=ExtResource("24_6gg2j")]
+position = Vector2(4413, -789)
+
+[node name="Fruit6" parent="Fruits" unique_id=2090128900 instance=ExtResource("24_6gg2j")]
+position = Vector2(3020, -560)
+
+[node name="Fruit7" parent="Fruits" unique_id=13378352 instance=ExtResource("24_6gg2j")]
+position = Vector2(8442, -504)
 
 [node name="Flag" parent="." unique_id=807215847 instance=ExtResource("25_i5kxt")]
 position = Vector2(15139, -736)
