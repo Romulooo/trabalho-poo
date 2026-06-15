@@ -1,6 +1,6 @@
 # Tirano-Salto Rexes
-
-<img width="948" height="465" alt="Captura de tela 2026-06-14 211245" src="https://github.com/user-attachments/assets/4a96dbd3-e6f0-41fb-ad7c-42e3d7c6912e" />
+<img width="948" height="465" alt="Level1" src="https://github.com/user-attachments/assets/59fd1101-0eac-44e3-8abf-7a156007453b" />
+<img width="948" height="465" alt="Level2" src="https://github.com/user-attachments/assets/6e00f40b-b95f-4386-8048-357dd5f47f92" />
 
 ## 📖 Sobre o Projeto
 Tirano-Salto Rexes é um jogo de plataforma 2D desenvolvido como trabalho prático para a disciplina de Programação Orientada a Objetos 1 na Universidade Federal de Santa Catarina (UFSC). 
