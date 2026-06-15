@@ -10,3 +10,16 @@ O projeto aplica conceitos fundamentais de orientação a objetos (como herança
 ## 🛠️ Tecnologias e Conceitos
 * **Motor Gráfico:** Godot Engine [4.6.3]
 * **Linguagem:** [GDScript]
+
+## 📦 Pacotes de Assets Utilizados
+Os recursos visuais e sonoros utilizados no desenvolvimento deste projeto foram obtidos a partir dos seguintes pacotes:
+
+* **Pixel Adventure** – Disponível em: [https://pixelfrog-assets.itch.io/pixel-adventure-1].
+* **Dino Characters** – Disponível em: [https://arks.itch.io/dino-characters] - Desenvolvido por https://x.com/ArksDigital.
+* **Four seasons platformer sprites** – Disponível em: [https://kevins-moms-house.itch.io/four-seasons-platformer-sprites].
+* **PLATFORMER/METROIDVANIA ASSET PACK** – Disponível em: [https://o-lobster.itch.io/platformmetroidvania-pixel-art-asset-pack].
+* **BookStyles Complete UI Pack** – Disponível em: [https://crusenho.itch.io/complete-ui-book-styles-pack].
+* **Brackeys' Platformer Bundle** – Disponível em: [https://brackeysgames.itch.io/brackeys-platformer-bundle].
+
+
+
