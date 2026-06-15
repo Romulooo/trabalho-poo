@@ -1,4 +1,7 @@
-<img width="1897" height="930" alt="Captura de tela 2026-06-14 211245" src="https://github.com/user-attachments/assets/4a96dbd3-e6f0-41fb-ad7c-42e3d7c6912e" />
+# Dino Adventure
+
+<img width="948" height="465" alt="Captura de tela 2026-06-14 211245" src="https://github.com/user-attachments/assets/4a96dbd3-e6f0-41fb-ad7c-42e3d7c6912e" />
+
 ## 📖 Sobre o Projeto
 Este projeto é um jogo de plataforma 2D desenvolvido como trabalho prático para a disciplina de Programação Orientada a Objetos 1 na Universidade Federal de Santa Catarina (UFSC). 
 
